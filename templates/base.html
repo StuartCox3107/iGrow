@@ -2,12 +2,32 @@
 <html lang="en">
 
 <head>
-	{% include 'layout/header.html' %}
-	<title>{{title}}</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
+
 </head>
 
 <body>
-	<!-- Main content -->
+	<header>
+		<nav>
+			<div class="nav-wrapper light-green">
+				<a href="#" class="brand-logo"><i class="material-icons">eco</i>iGrow</a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="">Link1</a></li>
+					<li><a href="">Link2</a></li>
+					<li><a href="">Link3</a></li>
+				</ul>
+				<ul class="side-nav" id="mobile-demo">
+					<li><a href="">Link1</a></li>
+					<li><a href="">Link2</a></li>
+					<li><a href="">Link3</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	
 	{% block content %} {% endblock %}
 
 </body>

@@ -15,9 +15,11 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 
 mongo = PyMongo
 
+# sets route so that index.html is main page
 @app.route('/')
-def hello_world():
-    return "Test"
+@app.route('/index')
+def index():
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

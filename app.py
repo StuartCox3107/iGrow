@@ -1,13 +1,14 @@
 from flask import Flask, render_template
 import os
+from flask_pymongo import flask_pymongo
+from bson.objectid import ObjectId
 from os import path
 
 if path.exists("env.py"):
   import env 
 
 
-MONGO_DBNAME = os.environ.get('MONGO_DBNAME')
-MONGO_URI = os.environ.get('MONGO_URI')
+app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 
 
 app = Flask(__name__)

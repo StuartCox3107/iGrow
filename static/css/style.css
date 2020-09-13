@@ -2,4 +2,27 @@
 body {
     background-color: #fcfaf5;
     font-family: "Baloo Thambi 2", sans-serif; 
+    color: #666666;
 }
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*base.html styling*/
+#page-footer {
+    color: red;
+}
+
+
+/*index.html styling*/
+#indeximage {
+    padding-top: 30px;
+}
+
+#indextext {
+    font-size: 2.5rem;
+}
+
+

@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" href="favicon.ico" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
@@ -26,6 +30,7 @@
 
   <body>
     <header>
+      <!--materialize navbar-->
       <nav>
         <div class="nav-wrapper light-green">
           <a href="#" class="brand-logo"
@@ -49,5 +54,36 @@
     </header>
 
     {% block content %} {% endblock %}
+
+    <footer class="page-footer light-green">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text"><i class="material-icons">eco</i> iGrow</h5>
+            <p class="grey-text text-lighten-4">
+              The new way to keep track of your planting and become a better
+              gardener.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Stuart Cox 2020
+        </div>
+      </div>
+    </footer>
   </body>
+
+    <!--script sources-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 </html>

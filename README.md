@@ -115,11 +115,11 @@ All data is stored in MongoDB in two collections
 
 - Users - This stores the user's first name, username and password
 - Plants - this stores the users records of plantings, designed to be created and updated at three different times:
-    - Planting time
+    - Planting time:
         - Year planted, month planted, what planted, packaging image (an upload of a picture of the seed packet), planting notes
-    - Growing time
+    - Growing time:
         - Growing notes
-    - Harvest time
+    - Harvest time:
         - Harvest date, harvest image (an upload of an image of the grown plant), harvest notes and a "Would you grow again?" option
 
 ---
@@ -135,17 +135,14 @@ All data is stored in MongoDB in two collections
 - HTML, CSS & Python languages
 - [Google fonts](https://fonts.google.com/) for Baloo Thambo 2 font used through all pages, opens in same tab, press back to return
 - [Favicon.io](https://favicon.io/) to generate favicon,opens in same tab, press back to return
-- [Gitpod](https://www.gitpod.io/)  IDE used to code, opens in same tab, press back to return
-- [GitHub](https://github.com/)  To host the repositories for this project and the live website preview, opens in same tab, press back to return
-- [Balsamiq](https://balsamiq.com/)  used to design wireframes, opens in same tab, press back to return
-- [https://undraw.co/illustrations]  used for cartoon images on site
-- materialize
-- flask
-- heroku
-- tinyPNG
-- jinja
-- mongoDB
-- pymongo
+- [Gitpod](https://www.gitpod.io/) IDE used to code, opens in same tab, press back to return
+- [GitHub](https://github.com/) To host the repositories for this project and the live website preview, opens in same tab, press back to return
+- [Balsamiq](https://balsamiq.com/) used to design wireframes, opens in same tab, press back to return
+- [Undraw](https://undraw.co/illustrations) used for cartoon images on site, opens in same tab, press back to return
+- [Materialize](https://materializecss.com/) used for the site header & footer, opens in same tab, press back to return
+- [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) for layout framework, opens in same tab, press back to return
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/) as a framework, opens in same tab, press back to return
+- [MongoDB](https://www.mongodb.com/) as the database store
 - [Coolors](https://coolors.co/) used for colour palette
 
 ---
@@ -173,7 +170,7 @@ To clone this project from GitHub:
 4. Change the current working directory to the location where you want the cloned directory to be made.
 5. Type ```git clone```, and then paste the URL you copied in Step 3.
 ```console
-git clone https://github.com/StuartCox3107/is.onboard.git
+git clone https://github.com/StuartCox3107/iGrow
 ```
 6. Press Enter. Your local clone will be created.
 7. Go to the cloned folder and run index.html

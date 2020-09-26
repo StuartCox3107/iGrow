@@ -109,7 +109,18 @@ Colours are designed to be soft and pastel like, the below colour palette was ge
 <img src="static/images/colourpalette.png" width="500">
 </div>
 
+## Database features
 
+All data is stored in MongoDB in two collections
+
+- Users - This stores the user's first name, username and password
+- Plants - this stores the users records of plantings, designed to be created and updated at three different times:
+    - Planting time
+        - Year planted, month planted, what planted, packaging image (an upload of a picture of the seed packet), planting notes
+    - Growing time
+        - Growing notes
+    - Harvest time
+        - Harvest date, harvest image (an upload of an image of the grown plant), harvest notes and a "Would you grow again?" option
 
 ---
 

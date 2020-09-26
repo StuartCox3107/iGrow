@@ -52,16 +52,16 @@ the existing username & password **or** choosing a link to sign-up
 This page will have a personalised welcome, it will show the existing user saved entries in an overview format. It will also 
 have buttons to "ADD" and "SIGN OUT". Each entry overview will give the opportunity to "GO TO RECORD", "UPDATE RECORD" and "DELETE RECORD"
 
-- [Landing page desktop & tablet](wireframes/P2signedindesktoptablet.png) opens in same tab, press back to return
-- [Landing page mobile](wireframes/P1signedinmobile.png) opens in same tab, press back to return
+- [Signed in page desktop & tablet](wireframes/P2signedindesktoptablet.png) opens in same tab, press back to return
+- [Signed in page mobile](wireframes/P2signedinmobile.png) opens in same tab, press back to return
 
 ### 3: Sign up page
 
 This page will give an overview of how the site works. It will also have input fields for "NAME", "USERNAME", and "PASSWORD" as well as a 
 "JOIN UP" button
 
-- [Landing page desktop & tablet](wireframes/P3signupdesktoptablet.png) opens in same tab, press back to return
-- [Landing page mobile](wireframes/P3signupmobile.png) opens in same tab, press back to return
+- [Sign up page desktop & tablet](wireframes/P3signupdesktoptablet.png) opens in same tab, press back to return
+- [Sign up page mobile](wireframes/P3signupmobile.png) opens in same tab, press back to return
 
 ### 4: Update page
 
@@ -69,16 +69,16 @@ This page will show the chosen individual record, and allow for all fields to be
 It will also have a "DELETE" button.
 
 
-- [Landing page desktop & tablet](wireframes/P4updatedesktoptablet.png) opens in same tab, press back to return
-- [Landing page mobile](wireframes/P4updatemobile.png) opens in same tab, press back to return
+- [Update page desktop & tablet](wireframes/P4updatedesktoptablet.png) opens in same tab, press back to return
+- [Update page mobile](wireframes/P4updatemobile.png) opens in same tab, press back to return
 
 ### 5: Read page
 
 This page will show the chosen individual record. It will have "EDIT" and "HOME" buttons.
 
 
-- [Landing page desktop & tablet](wireframes/P5readdesktoptablet.png) opens in same tab, press back to return
-- [Landing page mobile](wireframes/P5readmobile.png) opens in same tab, press back to return
+- [Read page desktop & tablet](wireframes/P5readdesktoptablet.png) opens in same tab, press back to return
+- [Read page mobile](wireframes/P5readmobile.png) opens in same tab, press back to return
 
 ### 6: Create page
 
@@ -86,8 +86,8 @@ This page will give the opportunity for the user to create a planting record. It
 to "ADD & RETURN HOME" or "ADD ANOTHER".
 
 
-- [Landing page desktop & tablet](wireframes/P6createdesktoptablet.png) opens in same tab, press back to return
-- [Landing page mobile](wireframes/P6createmobile.png) opens in same tab, press back to return
+- [Create page desktop & tablet](wireframes/P6createdesktoptablet.png) opens in same tab, press back to return
+- [Create page mobile](wireframes/P6createmobile.png) opens in same tab, press back to return
 
 ---
 
@@ -100,7 +100,7 @@ Chosen font used throughout is Baloo Thambi 2, chosen for the clean simple and e
 Colours are designed to be soft and pastel like, the below colour palette was generated using [coolors](https://coolors.co/)
 
 <div align="center">
-<img src="static/images/colourpallette.png" width="500">
+<img src="static/images/colourpalette.png" width="500">
 </div>
 
 

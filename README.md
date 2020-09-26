@@ -21,8 +21,7 @@ notes on the harvesting. The idea is that they will be able to have a record tha
 mistakes and problems and become better gardeners. As results are very dependent on individual growing circumstances 
 there will be no sharing of experiences with other users.
 
-<a href="https://i-grow.herokuapp.com/" target="_blank">**Link to live site**</a>
-
+**Link to live site:** https://i-grow.herokuapp.com/ (opens in same tab, click back if needed)
 ---
 
 ## User stories
@@ -43,7 +42,53 @@ available on other sites"
 
 ### Landing page
 
-This page will present options to login using my 
+This page will give an overview of what the site purpose is to the user. It will also present options to login using 
+the existing username & password **or** choosing a link to sign-up
+
+- [Landing page desktop & tablet](wireframes/P1landingdesktoptablet.png) opens in same tab, press back to return
+- [Landing page mobile](wireframes/P1landingmobile.png) opens in same tab, press back to return
+
+### Signed in page (HOME page for signed in users)
+
+This page will have a personalised welcome, it will show the existing user saved entries in an overview format. It will also 
+have buttons to "ADD" and "SIGN OUT". Each entry overview will give the opportunity to "GO TO RECORD", "UPDATE RECORD" and "DELETE RECORD"
+
+- [Landing page desktop & tablet](wireframes/P2signedindesktoptablet.png) opens in same tab, press back to return
+- [Landing page mobile](wireframes/P1signedinmobile.png) opens in same tab, press back to return
+
+### Sign up page
+
+This page will give an overview of how the site works. It will also have input fields for "NAME", "USERNAME", and "PASSWORD" as well as a 
+"JOIN UP" button
+
+- [Landing page desktop & tablet](wireframes/P3signupdesktoptablet.png) opens in same tab, press back to return
+- [Landing page mobile](wireframes/P3signupmobile.png) opens in same tab, press back to return
+
+### Update page
+
+This page will show the chosen individual record, and allow for all fields to be updated through field entry boxes and an "UPDATE NOW" button. 
+It will also have a "DELETE" button.
+
+
+- [Landing page desktop & tablet](wireframes/P4updatedesktoptablet.png) opens in same tab, press back to return
+- [Landing page mobile](wireframes/P4updatemobile.png) opens in same tab, press back to return
+
+### Read page
+
+This page will show the chosen individual record. It will have "EDIT" and "HOME" buttons.
+
+
+- [Landing page desktop & tablet](wireframes/P5readdesktoptablet.png) opens in same tab, press back to return
+- [Landing page mobile](wireframes/P5readmobile.png) opens in same tab, press back to return
+
+### Create page
+
+This page will give the opportunity for the user to create a planting record. It will also have buttons to give the opportunity 
+to "ADD & RETURN HOME" or "ADD ANOTHER".
+
+
+- [Landing page desktop & tablet](wireframes/P6createdesktoptablet.png) opens in same tab, press back to return
+- [Landing page mobile](wireframes/P6createmobile.png) opens in same tab, press back to return
 
 ---
 

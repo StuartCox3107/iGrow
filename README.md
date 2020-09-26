@@ -17,7 +17,7 @@ notes on the harvesting. The idea is that they will be able to have a record tha
 mistakes and problems and become better gardeners. As results are very dependent on individual growing circumstances 
 there will be no sharing of experiences with other users.
 
-**Link to live site:** https://i-grow.herokuapp.com/ (opens in same tab, click back if needed)
+[**Link to live site:**] (https://i-grow.herokuapp.com/) opens in same tab, click back if needed
 ---
 
 ## User stories
@@ -100,7 +100,7 @@ Chosen font used throughout is Baloo Thambi 2, chosen for the clean simple and e
 Colours are designed to be soft and pastel like, the below colour palette was generated using [coolors](https://coolors.co/)
 
 <div align="center">
-<img src="assets/images/colourpalette.png" width="500">
+<img src="static/assets/images/colourpalette.png" width="500">
 </div>
 
 

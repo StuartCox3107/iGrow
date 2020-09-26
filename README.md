@@ -16,7 +16,7 @@
 
 
 
-**Link to live site:** (opens in same tab, click back if needed)
+<a href="https://i-grow.herokuapp.com/" target="_blank">**Link to live site**</a>
 
 ---
 

@@ -39,7 +39,7 @@ available on other sites"
 
 ## Site features & wireframes
 
-### Landing page
+### 1: Landing page
 
 This page will give an overview of what the site purpose is to the user. It will also present options to login using 
 the existing username & password **or** choosing a link to sign-up
@@ -47,7 +47,7 @@ the existing username & password **or** choosing a link to sign-up
 - [Landing page desktop & tablet](wireframes/P1landingdesktoptablet.png) opens in same tab, press back to return
 - [Landing page mobile](wireframes/P1landingmobile.png) opens in same tab, press back to return
 
-### Signed in page (HOME page for signed in users)
+### 2: Signed in page (HOME page for signed in users)
 
 This page will have a personalised welcome, it will show the existing user saved entries in an overview format. It will also 
 have buttons to "ADD" and "SIGN OUT". Each entry overview will give the opportunity to "GO TO RECORD", "UPDATE RECORD" and "DELETE RECORD"
@@ -55,7 +55,7 @@ have buttons to "ADD" and "SIGN OUT". Each entry overview will give the opportun
 - [Landing page desktop & tablet](wireframes/P2signedindesktoptablet.png) opens in same tab, press back to return
 - [Landing page mobile](wireframes/P1signedinmobile.png) opens in same tab, press back to return
 
-### Sign up page
+### 3: Sign up page
 
 This page will give an overview of how the site works. It will also have input fields for "NAME", "USERNAME", and "PASSWORD" as well as a 
 "JOIN UP" button
@@ -63,7 +63,7 @@ This page will give an overview of how the site works. It will also have input f
 - [Landing page desktop & tablet](wireframes/P3signupdesktoptablet.png) opens in same tab, press back to return
 - [Landing page mobile](wireframes/P3signupmobile.png) opens in same tab, press back to return
 
-### Update page
+### 4: Update page
 
 This page will show the chosen individual record, and allow for all fields to be updated through field entry boxes and an "UPDATE NOW" button. 
 It will also have a "DELETE" button.
@@ -72,7 +72,7 @@ It will also have a "DELETE" button.
 - [Landing page desktop & tablet](wireframes/P4updatedesktoptablet.png) opens in same tab, press back to return
 - [Landing page mobile](wireframes/P4updatemobile.png) opens in same tab, press back to return
 
-### Read page
+### 5: Read page
 
 This page will show the chosen individual record. It will have "EDIT" and "HOME" buttons.
 
@@ -80,7 +80,7 @@ This page will show the chosen individual record. It will have "EDIT" and "HOME"
 - [Landing page desktop & tablet](wireframes/P5readdesktoptablet.png) opens in same tab, press back to return
 - [Landing page mobile](wireframes/P5readmobile.png) opens in same tab, press back to return
 
-### Create page
+### 6: Create page
 
 This page will give the opportunity for the user to create a planting record. It will also have buttons to give the opportunity 
 to "ADD & RETURN HOME" or "ADD ANOTHER".
@@ -129,7 +129,7 @@ Colours are designed to be soft and pastel like, the below colour palette was ge
 - jinja
 - mongoDB
 - pymongo
-- coolors used for colour palette
+- [Coolors](https://coolors.co/) used for colour palette
 
 ---
 

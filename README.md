@@ -39,6 +39,10 @@ available on other sites"
 
 ## Site features & wireframes
 
+### Site plant
+
+Click [Here](static/images/siteplan.pdf) for the site plan
+
 ### 1: Landing page
 
 This page will give an overview of what the site purpose is to the user. It will also present options to login using 

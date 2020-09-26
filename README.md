@@ -144,6 +144,8 @@ All data is stored in MongoDB in two collections
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/) as a framework, opens in same tab, press back to return
 - [MongoDB](https://www.mongodb.com/) as the database store
 - [Coolors](https://coolors.co/) used for colour palette
+- [Material Icons]
+- [Hover.css](https://ianlunn.github.io/Hover/)
 
 ---
 

@@ -14,7 +14,12 @@
 
 ## Aim of the site
 
-
+This is a site for vegetable gardeners. Each gardener will have an individual profile that allows them 
+to record information about the vegetables they have grown. Initially they wil record the planting details, 
+then as the plant grows during the season they will record notes on the growing, finally they will record 
+notes on the harvesting. The idea is that they will be able to have a record that allows them to learn from past 
+mistakes and problems and become better gardeners. As results are very dependent on individual growing circumstances 
+there will be no sharing of experiences with other users.
 
 <a href="https://i-grow.herokuapp.com/" target="_blank">**Link to live site**</a>
 
@@ -22,13 +27,23 @@
 
 ## User stories
 
+"As a gardener: I want a record of the vegetables I have grown over time, I want to know what has been successful and what has failed."
 
+"As a gardener: I want to be able to update my records according to the lifecycle of plants throughout the growing season, I want to be able 
+to track the various stages of growing and use this information to help me  in the future"
+
+"As a gardener: I want this site to be specific to **my** experience and **my** growing conditions rather than using generalized information 
+available on other sites"
+
+"As a gardener: I want a record of whether what I grow can be considered a success or not"
 
 ---
 
 ## Site features & wireframes
 
+### Landing page
 
+This page will present options to login using my 
 
 ---
 

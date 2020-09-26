@@ -2,10 +2,6 @@
 <img src="assets/images/multidevicemockup.png" width="350">
 </div>
 
-<div align="center">
-<img src="" height="350" width="350">
-</div>
-
 ---
 
 # iGrow
@@ -25,6 +21,9 @@ there will be no sharing of experiences with other users.
 ---
 
 ## User stories
+
+"As a new user: I want to understand what the site does and how it can help me. I want to feel that the site 
+will be easy and intuitive and that it will serve a purpose to me"
 
 "As a gardener: I want a record of the vegetables I have grown over time, I want to know what has been successful and what has failed."
 
@@ -94,6 +93,16 @@ to "ADD & RETURN HOME" or "ADD ANOTHER".
 
 ## Theme & typography
 
+The site will be clean, simple and east to use. Not too busy or give the user information overload.
+
+Chosen font used throughout is Baloo Thambi 2, chosen for the clean simple and easy to read style.
+
+Colours are designed to be soft and pastel like, the below colour palette was generated using [coolors](https://coolors.co/)
+
+<div align="center">
+<img src="assets/images/colourpalette.png" width="500">
+</div>
+
 
 
 ---
@@ -104,10 +113,9 @@ to "ADD & RETURN HOME" or "ADD ANOTHER".
 
 ---
 
-## Technologies Used & credits
+## Technologies used
 
 - HTML, CSS & Python languages
-- [JQuery](https://jquery.com) Javascript library, opens in same tab, press back to return
 - [Google fonts](https://fonts.google.com/) for Baloo Thambo 2 font used through all pages, opens in same tab, press back to return
 - [Favicon.io](https://favicon.io/) to generate favicon,opens in same tab, press back to return
 - [Gitpod](https://www.gitpod.io/)  IDE used to code, opens in same tab, press back to return
@@ -116,7 +124,12 @@ to "ADD & RETURN HOME" or "ADD ANOTHER".
 - [https://undraw.co/illustrations]  used for cartoon images on site
 - materialize
 - flask
-- 
+- heroku
+- tinyPNG
+- jinja
+- mongoDB
+- pymongo
+- coolors used for colour palette
 
 ---
 
@@ -154,7 +167,6 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 
 ### issues
 
-- JS Lint gives an error of unexpected 'let' on line 62, this issue has not been resolved but the code is working
 
 ### Credits & acknowledgements
 

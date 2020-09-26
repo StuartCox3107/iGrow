@@ -25,49 +25,51 @@ there will be no sharing of experiences with other users.
 "As a new user: I want to understand what the site does and how it can help me. I want to feel that the site 
 will be easy and intuitive and that it will serve a purpose to me"
 
-"As a gardener: I want a record of the vegetables I have grown over time, I want to know what has been successful and what has failed."
+"As an existing user: I want a record of the vegetables I have grown over time, I want to know what has been successful and what has failed."
 
-"As a gardener: I want to be able to update my records according to the lifecycle of plants throughout the growing season, I want to be able 
+"As an existing user: I want to be able to update my records according to the lifecycle of plants throughout the growing season, I want to be able 
 to track the various stages of growing and use this information to help me  in the future"
 
-"As a gardener: I want this site to be specific to **my** experience and **my** growing conditions rather than using generalized information 
+"As an existing user: I want this site to be specific to **my** experience and **my** growing conditions rather than using generalized information 
 available on other sites"
 
-"As a gardener: I want a record of whether what I grow can be considered a success or not"
+"As an existing user: I want a record of whether what I grow can be considered a success or not"
 
 ---
 
-## Site features & wireframes
+## Site plan, features & wireframes
 
-### Site plant
+### Site plan
 
-Click [Here](static/images/siteplan.pdf) for the site plan
+Click [Here](static/images/siteplan.pdf) for the site plan, opens in same tab, click back if needed
 
-### 1: Landing page
+### Page 1: Landing page
 
-This page will give an overview of what the site purpose is to the user. It will also present options to login using 
-the existing username & password **or** choosing a link to sign-up
+This page will give an overview of what the site purpose is to the user. It will explain what the site can do 
+to help them and an overview of how it works. It will also present options to login using 
+an existing username & password **or** choosing a link to sign-up
 
 - [Landing page desktop & tablet](wireframes/P1landingdesktoptablet.png) opens in same tab, press back to return
 - [Landing page mobile](wireframes/P1landingmobile.png) opens in same tab, press back to return
 
-### 2: Signed in page (HOME page for signed in users)
+### Page 2: Signed in page (HOME page for signed in users)
 
 This page will have a personalised welcome, it will show the existing user saved entries in an overview format. It will also 
-have buttons to "ADD" and "SIGN OUT". Each entry overview will give the opportunity to "GO TO RECORD", "UPDATE RECORD" and "DELETE RECORD"
+have buttons to "ADD" (add a record- going to page 6) and "SIGN OUT", which will return to page 1. 
+Each entry overview will give the opportunity to "GO TO RECORD" (page 5), "UPDATE RECORD" (page 4) and "DELETE RECORD"
 
 - [Signed in page desktop & tablet](wireframes/P2signedindesktoptablet.png) opens in same tab, press back to return
 - [Signed in page mobile](wireframes/P2signedinmobile.png) opens in same tab, press back to return
 
-### 3: Sign up page
+### Page 3: Sign up page
 
 This page will give an overview of how the site works. It will also have input fields for "NAME", "USERNAME", and "PASSWORD" as well as a 
-"JOIN UP" button
+"JOIN UP" button.
 
 - [Sign up page desktop & tablet](wireframes/P3signupdesktoptablet.png) opens in same tab, press back to return
 - [Sign up page mobile](wireframes/P3signupmobile.png) opens in same tab, press back to return
 
-### 4: Update page
+### Page 4: Update page
 
 This page will show the chosen individual record, and allow for all fields to be updated through field entry boxes and an "UPDATE NOW" button. 
 It will also have a "DELETE" button.
@@ -76,7 +78,7 @@ It will also have a "DELETE" button.
 - [Update page desktop & tablet](wireframes/P4updatedesktoptablet.png) opens in same tab, press back to return
 - [Update page mobile](wireframes/P4updatemobile.png) opens in same tab, press back to return
 
-### 5: Read page
+### Page 5: Read page
 
 This page will show the chosen individual record. It will have "EDIT" and "HOME" buttons.
 
@@ -84,7 +86,7 @@ This page will show the chosen individual record. It will have "EDIT" and "HOME"
 - [Read page desktop & tablet](wireframes/P5readdesktoptablet.png) opens in same tab, press back to return
 - [Read page mobile](wireframes/P5readmobile.png) opens in same tab, press back to return
 
-### 6: Create page
+### Page 6: Create page
 
 This page will give the opportunity for the user to create a planting record. It will also have buttons to give the opportunity 
 to "ADD & RETURN HOME" or "ADD ANOTHER".

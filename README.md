@@ -1,5 +1,5 @@
 <div align="center">
-<img src="assets/images/multidevicemockup.png" width="350">
+<img src="assets/images/PLACEHOLDERFORMAINIMAGE" width="350">
 </div>
 
 ---
@@ -12,7 +12,7 @@
 
 This is a site for vegetable gardeners. Each gardener will have an individual profile that allows them 
 to record information about the vegetables they have grown. Initially they wil record the planting details, 
-then as the plant grows during the season they will record notes on the growing, finally they will record 
+then as the plant grows during the season, they will record notes on the growing. Finally they will record 
 notes on the harvesting. The idea is that they will be able to have a record that allows them to learn from past 
 mistakes and problems and become better gardeners. As results are very dependent on individual growing circumstances 
 there will be no sharing of experiences with other users.
@@ -99,9 +99,9 @@ to "ADD & RETURN HOME" or "ADD ANOTHER".
 
 ## Theme & typography
 
-The site will be clean, simple and east to use. Not too busy or give the user information overload.
+The site will be clean, simple and easy to use. Will not be too busy, or give the user information overload at any stage.
 
-Chosen font used throughout is Baloo Thambi 2, chosen for the clean simple and easy to read style.
+Chosen font used throughout is Baloo Thambi 2, chosen for the clean, simple and easy to read style.
 
 Colours are designed to be soft and pastel like, the below colour palette was generated using [coolors](https://coolors.co/)
 
@@ -114,7 +114,7 @@ Colours are designed to be soft and pastel like, the below colour palette was ge
 All data is stored in MongoDB in two collections
 
 - Users - This stores the user's first name, username and password
-- Plants - this stores the users records of plantings, designed to be created and updated at three different times:
+- Plants - this stores the users records of plantings, designed to be created/updated at three different times:
     - Planting time:
         - Year planted, month planted, what planted, packaging image (an upload of a picture of the seed packet), planting notes
     - Growing time:
@@ -181,7 +181,7 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 
 ---
 
-### issues
+### Issues
 
 
 ### Credits & acknowledgements

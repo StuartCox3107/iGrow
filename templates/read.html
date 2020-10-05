@@ -1,6 +1,25 @@
 {% extends 'base.html' %}
 {% block content %}
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-md-6 float-left" id="readimage">
+      <img
+        class="img-fluid"
+        src="{{url_for('static', filename='/images/' + 'readimage.png')}}"
+        alt="picture of someone walking past trees"
+      />
+    </div>
+    <div class="col-sm-12 col-md-6 my-auto text-sm-center" id="readtext">
+      <h2>Grow & Learn</h2>
+      <br />
+      <p>
+        Use this page to learn what worked and what didn't. See best 
+        practice and make the most of others' experiences.
+      </p>
+    </div>
+  </div>
+</div>
 
 
 {% endblock %}

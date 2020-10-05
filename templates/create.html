@@ -1,124 +1,170 @@
 {% extends 'base.html' %} {% block content %}
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-md-6 float-left" id="createimage">
+      <img
+        class="img-fluid"
+        src="{{url_for('static', filename='/images/' + 'createimage.png')}}"
+        alt="picture of three trees"
+      />
+    </div>
+    <div class="col-sm-12 col-md-6 my-auto text-sm-center" id="createtext">
+      <h2>Grow & Learn</h2>
+      <p>Record your experience here</p>
+      <br />
+      <p>
+        Use this page to record how you did what you did, what the outcome was,
+        and what you learnt for the future.
+      </p>
+    </div>
+  </div>
+</div>
+
 <div class="row">
   <form action="{{ url_for('add_planting') }}" method="POST" class="col s12">
     <!--datepicker for date planted field-->
-      <div class="row">
-        <div class="input-field col s12" id="matfix">
-          <i class="material-icons prefix">today</i>
+    <div class="row">
+      <div class="input-field col s12" id="matfix">
+        <i class="material-icons prefix">today</i>
+        <input
+          id="date_planted"
+          name="date_planted"
+          type="text"
+          class="datepicker"
+        />
+        <label for="icon_prefix">Date planted</label>
+      </div>
+    </div>
+
+    <!--text field for plant name-->
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">create</i>
+        <input id="plant_name" name="plant_name" type="text" />
+        <label for="icon_prefix">Plant name</label>
+      </div>
+    </div>
+
+    <!--text field for planting notes-->
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">create</i>
+        <textarea
+          name="plant_notes"
+          id="plant_notes"
+          class="materialize-textarea"
+        ></textarea>
+        <label for="icon_telephone">Planting notes</label>
+      </div>
+    </div>
+
+    <!--upload field for seed packet image-->
+    <div class="row">
+      <label>Upload picture of seed packed (Optional)</label>
+      <div class="file-field input-field">
+        <div class="btn">
+          <span>Browse</span>
+          <input type="file" />
+        </div>
+
+        <div class="file-path-wrapper">
           <input
-            id="date_planted"
-            name="date_planted"
+            class="file-path validate"
             type="text"
-            class="datepicker"
+            placeholder="Upload file"
           />
-          <label for="icon_prefix">Date planted</label>
         </div>
       </div>
+    </div>
 
-      <!--text field for plant name-->
-      <div class="row">
-        <div class="input-field col s12">
-          <i class="material-icons prefix">create</i>
-          <input id="plant_name" name="plant_name" type="text" />
-          <label for="icon_prefix">Plant name</label>
-        </div>
+    <!--text field for growing notes-->
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">create</i>
+        <textarea
+          name="grow_notes"
+          id="grow_notes"
+          class="materialize-textarea"
+        ></textarea>
+        <label for="icon_telephone">Growing notes</label>
       </div>
+    </div>
 
-       <!--text field for planting notes-->
-      <div class="row">
-			<div class="input-field col s12">
-				<i class="material-icons prefix">create</i>
-				<textarea name="plant_notes" id="plant_notes" class="materialize-textarea"></textarea>
-				<label for="icon_telephone">Planting notes</label>
-			</div>
-		</div>
+    <!--datepicker for date harvested field-->
+    <div class="row">
+      <div class="input-field col s12" id="matfix">
+        <i class="material-icons prefix">today</i>
+        <input
+          id="harvest_date"
+          name="harvest_date"
+          type="text"
+          class="datepicker"
+        />
+        <label for="icon_prefix">Date harvested</label>
+      </div>
+    </div>
 
-        <!--upload field for seed packet image-->
-        <div class = "row">
-               <label>Upload picture of seed packed (Optional)</label>
-               <div class = "file-field input-field">
-                  <div class = "btn">
-                     <span>Browse</span>
-                     <input type = "file" />
-                  </div>
-                  
-                  <div class = "file-path-wrapper">
-                     <input class = "file-path validate" type = "text"
-                        placeholder = "Upload file" />
-                  </div>
-               </div>
+    <!--upload field for final plant image-->
+    <div class="row">
+      <label>Upload picture of plant grown (Optional)</label>
+      <div class="file-field input-field">
+        <div class="btn">
+          <span>Browse</span>
+          <input type="file" />
         </div>
 
-        <!--text field for growing notes-->
-      <div class="row">
-			<div class="input-field col s12">
-				<i class="material-icons prefix">create</i>
-				<textarea name="grow_notes" id="grow_notes" class="materialize-textarea"></textarea>
-				<label for="icon_telephone">Growing notes</label>
-			</div>
-		</div>
-
-        <!--datepicker for date harvested field-->
-      <div class="row">
-        <div class="input-field col s12" id="matfix">
-          <i class="material-icons prefix">today</i>
+        <div class="file-path-wrapper">
           <input
-            id="harvest_date"
-            name="harvest_date"
+            class="file-path validate"
             type="text"
-            class="datepicker"
+            placeholder="Upload file"
           />
-          <label for="icon_prefix">Date harvested</label>
         </div>
       </div>
+    </div>
 
-      <!--upload field for final plant image-->
-        <div class = "row">
-               <label>Upload picture of plant grown (Optional)</label>
-               <div class = "file-field input-field">
-                  <div class = "btn">
-                     <span>Browse</span>
-                     <input type = "file" />
-                  </div>
-                  
-                  <div class = "file-path-wrapper">
-                     <input class = "file-path validate" type = "text"
-                        placeholder = "Upload file" />
-                  </div>
-               </div>
-        </div>
-
-        <!--text field for harvest notes-->
-      <div class="row">
-			<div class="input-field col s12">
-				<i class="material-icons prefix">create</i>
-				<textarea name="harvest_notes" id="harvest_notes" class="materialize-textarea"></textarea>
-				<label for="icon_telephone">Harvest notes</label>
-			</div>
-		</div>
-
-        <!--text field for country-->
-      <div class="row">
-        <div class="input-field col s12">
-          <i class="material-icons prefix">create</i>
-          <input id="country" name="country" type="text" />
-          <label for="icon_prefix">Country</label>
-        </div>
+    <!--text field for harvest notes-->
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">create</i>
+        <textarea
+          name="harvest_notes"
+          id="harvest_notes"
+          class="materialize-textarea"
+        ></textarea>
+        <label for="icon_telephone">Harvest notes</label>
       </div>
+    </div>
 
-        <!--would grow again? field-->
-      <div class="row">
-			<div class="switch">
-				<label>
-                  <input id="grow_again" name="grow_again" type="checkbox">
-                  <span class="lever"></span>
-                  Would you grow again?
-                </label>
-			</div>
-		</div>
+    <!--text field for country-->
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">create</i>
+        <input id="country" name="country" type="text" />
+        <label for="icon_prefix">Country</label>
+      </div>
+    </div>
 
-
+    <!--would grow again? field-->
+    <div class="row">
+      <div class="switch">
+        <label>
+          <input id="grow_again" name="grow_again" type="checkbox" />
+          <span class="lever"></span>
+          Would you grow again?
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <button class="btn waves-effect waves-light" type="submit" name="action">
+        Add & return home
+        <i class="material-icons right">playlist_add</i>
+      </button>
+       <button class="btn waves-effect waves-light" id ="addanother" type="submit" name="action">
+        Add another
+        <i class="material-icons right">playlist_add</i>
+      </button>
     </div>
   </form>
 </div>

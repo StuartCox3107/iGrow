@@ -32,3 +32,17 @@ img {
     font-size: 2.5rem;
 }
 
+#addanother {
+    margin-left: 30px;
+}
+
+/*read.html styling*/
+#readimage {
+    padding-top: 30px;
+}
+
+#readtext {
+    font-size: 2.5rem;
+}
+
+

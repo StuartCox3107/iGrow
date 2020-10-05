@@ -26,6 +26,11 @@ def index():
 def add_planting():
     return render_template('create.html') 
 
+# route to read page
+@app.route('/read_planting')
+def read_planting():
+    return render_template('read.html') 
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

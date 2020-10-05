@@ -1,7 +1,29 @@
 {% extends 'base.html' %}
 {% block content %}
 
+<div class="row">
+	<form action="{{ url_for('add_planting') }}" method="POST"  class="col s12">
+		<div class="row">
+        <!--datepicker for date planted field-->
+            <div class="row">
+			<div class="input-field col s12" id="matfix">
+				<i class="material-icons prefix">today</i>
+				<input id="date_planted" name="date_planted" type="text" class="datepicker">
+				<label for="icon_prefix">Date planted</label>
+			</div>
+		</div>
+        <!--text field for plant name-->
+        <div class="row">
+			<div class="input-field col s12">
+				<i class="material-icons prefix">create</i>
+				<textarea name="plant_name" id="plant_name" class="materialize-textarea"></textarea>
+				<label for="icon_telephone">Plant name</label>
+			</div>
+		</div>
 
+        </div>
+    </form>
+</div>
 
 
 {% endblock %}

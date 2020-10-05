@@ -1,5 +1,5 @@
-from flask import Flask, render_template, url_for
 import os
+from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from os import path
@@ -20,6 +20,12 @@ mongo = PyMongo
 @app.route('/index')
 def index():
     return render_template('index.html')
+
+# route to adding a record page
+@app.route('/add_planting')
+def add_planting():
+    return render_template('create.html') 
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

@@ -23,3 +23,12 @@ img {
     padding-bottom: 30px;
 }
 
+/*create.html styling*/
+#createimage {
+    padding-top: 30px;
+}
+
+#createtext {
+    font-size: 2.5rem;
+}
+

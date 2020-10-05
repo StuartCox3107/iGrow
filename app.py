@@ -31,6 +31,11 @@ def add_planting():
 def read_planting():
     return render_template('read.html') 
 
+# route to update page
+@app.route('/update_planting')
+def update_planting():
+    return render_template('update.html') 
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

@@ -48,7 +48,75 @@
                         placeholder = "Upload file" />
                   </div>
                </div>
-            </div>
+        </div>
+
+        <!--text field for growing notes-->
+      <div class="row">
+			<div class="input-field col s12">
+				<i class="material-icons prefix">create</i>
+				<textarea name="grow_notes" id="grow_notes" class="materialize-textarea"></textarea>
+				<label for="icon_telephone">Growing notes</label>
+			</div>
+		</div>
+
+        <!--datepicker for date harvested field-->
+      <div class="row">
+        <div class="input-field col s12" id="matfix">
+          <i class="material-icons prefix">today</i>
+          <input
+            id="harvest_date"
+            name="harvest_date"
+            type="text"
+            class="datepicker"
+          />
+          <label for="icon_prefix">Date harvested</label>
+        </div>
+      </div>
+
+      <!--upload field for final plant image-->
+        <div class = "row">
+               <label>Upload picture of plant grown (Optional)</label>
+               <div class = "file-field input-field">
+                  <div class = "btn">
+                     <span>Browse</span>
+                     <input type = "file" />
+                  </div>
+                  
+                  <div class = "file-path-wrapper">
+                     <input class = "file-path validate" type = "text"
+                        placeholder = "Upload file" />
+                  </div>
+               </div>
+        </div>
+
+        <!--text field for harvest notes-->
+      <div class="row">
+			<div class="input-field col s12">
+				<i class="material-icons prefix">create</i>
+				<textarea name="harvest_notes" id="harvest_notes" class="materialize-textarea"></textarea>
+				<label for="icon_telephone">Harvest notes</label>
+			</div>
+		</div>
+
+        <!--text field for country-->
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">create</i>
+          <input id="country" name="country" type="text" />
+          <label for="icon_prefix">Country</label>
+        </div>
+      </div>
+
+        <!--would grow again? field-->
+      <div class="row">
+			<div class="switch">
+				<label>
+                  <input id="grow_again" name="grow_again" type="checkbox">
+                  <span class="lever"></span>
+                  Would you grow again?
+                </label>
+			</div>
+		</div>
 
 
     </div>

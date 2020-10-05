@@ -1,29 +1,58 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 
 <div class="row">
-	<form action="{{ url_for('add_planting') }}" method="POST"  class="col s12">
-		<div class="row">
-        <!--datepicker for date planted field-->
-            <div class="row">
-			<div class="input-field col s12" id="matfix">
-				<i class="material-icons prefix">today</i>
-				<input id="date_planted" name="date_planted" type="text" class="datepicker">
-				<label for="icon_prefix">Date planted</label>
-			</div>
-		</div>
-        <!--text field for plant name-->
-        <div class="row">
+  <form action="{{ url_for('add_planting') }}" method="POST" class="col s12">
+    <!--datepicker for date planted field-->
+      <div class="row">
+        <div class="input-field col s12" id="matfix">
+          <i class="material-icons prefix">today</i>
+          <input
+            id="date_planted"
+            name="date_planted"
+            type="text"
+            class="datepicker"
+          />
+          <label for="icon_prefix">Date planted</label>
+        </div>
+      </div>
+
+      <!--text field for plant name-->
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">create</i>
+          <input id="plant_name" name="plant_name" type="text" />
+          <label for="icon_prefix">Plant name</label>
+        </div>
+      </div>
+
+       <!--text field for planting notes-->
+      <div class="row">
 			<div class="input-field col s12">
 				<i class="material-icons prefix">create</i>
-				<textarea name="plant_name" id="plant_name" class="materialize-textarea"></textarea>
-				<label for="icon_telephone">Plant name</label>
+				<textarea name="plant_notes" id="plant_notes" class="materialize-textarea"></textarea>
+				<label for="icon_telephone">Planting notes</label>
 			</div>
 		</div>
 
-        </div>
-    </form>
-</div>
+        <!--upload field for seed packet image-->
+        <div class = "row">
+               <label>Upload picture of seed packed (Optional)</label>
+               <div class = "file-field input-field">
+                  <div class = "btn">
+                     <span>Browse</span>
+                     <input type = "file" />
+                  </div>
+                  
+                  <div class = "file-path-wrapper">
+                     <input class = "file-path validate" type = "text"
+                        placeholder = "Upload file" />
+                  </div>
+               </div>
+            </div>
 
+
+    </div>
+  </form>
+</div>
 
 {% endblock %}

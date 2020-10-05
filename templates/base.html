@@ -39,21 +39,19 @@
       <div class="navbar-fixed">
         <nav>
           <div class="nav-wrapper light-green">
-            <a href="#" class="brand-logo">
+            <a href="{{url_for('index')}}" class="brand-logo">
               <i class="material-icons badge">eco</i>iGrow</a
             >
-            <a href="#" data-activates="mobile-demo" class="button-collapse"
+            <a href="{{url_for('index')}}" data-activates="mobile-demo" class="button-collapse"
               ><i class="material-icons">menu</i></a
             >
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="">Home</a></li>
-              <li><a href="">Add</a></li>
-              <li><a href="">Sign Out</a></li>
+              <li><a href="{{url_for('index')}}">Home</a></li>
+              <li><a href="{{url_for('add_planting')}}">Add</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
-              <li><a href="">Home</a></li>
-              <li><a href="">Add</a></li>
-              <li><a href="">Sign Out</a></li>
+              <li><a href="{{url_for('index')}}">Home</a></li>
+              <li><a href="{{url_for('add_planting')}}">Add</a></li>
             </ul>
           </div>
         </nav>
@@ -75,11 +73,8 @@
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text">Links</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Add</a></li>
-              <li>
-                <a class="grey-text text-lighten-3" href="#!">Sign Out</a>
-              </li>
+              <li><a class="grey-text text-lighten-3" href="{{url_for('index')}}">Home</a></li>
+              <li><a class="grey-text text-lighten-3" href="{{url_for('add_planting')}}">Add</a></li>
             </ul>
           </div>
         </div>
@@ -109,10 +104,10 @@
     ></script>
 
     <script type="text/javascript">
-
-    $(document).ready(function() {
+		$(document).ready(function() {
             $('.collapsible').collapsible();
             $('select').material_select();
+            $(".button-collapse").sideNav();
         })
         
       $(".datepicker").pickadate({

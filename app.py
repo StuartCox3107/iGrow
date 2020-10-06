@@ -13,7 +13,7 @@ app = Flask(__name__)
 app.config["DB_NAME"] = os.environ.get("DB_NAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 
-mongo = PyMongo
+mongo = PyMongo(app)
 
 # sets route so that index.html is main page
 @app.route('/')

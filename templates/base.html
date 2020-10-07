@@ -25,6 +25,7 @@
       href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2:400,600,700,800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css"/>
     <link
       rel="stylesheet"
       href="{{url_for('static', filename='css/style.css')}}"
@@ -39,15 +40,15 @@
       <div class="navbar-fixed">
         <nav>
           <div class="nav-wrapper light-green">
-            <a href="{{url_for('index')}}" class="brand-logo">
+            <a href="{{url_for('index')}}" class="brand-logo hvr-float-shadow">
               <i class="material-icons badge">eco</i>iGrow</a
             >
             <a href="{{url_for('index')}}" data-activates="mobile-demo" class="button-collapse"
               ><i class="material-icons">menu</i></a
             >
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="{{url_for('index')}}">Home</a></li>
-              <li><a href="{{url_for('add_planting')}}">Add</a></li>
+              <li><a href="{{url_for('index')}}" class ="hvr-float-shadow">Home</a></li>
+              <li><a href="{{url_for('add_planting')}}" class ="hvr-float-shadow">Add</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
               <li><a href="{{url_for('index')}}">Home</a></li>
@@ -65,7 +66,7 @@
         <div class="row">
           <div class="col l6 s12">
           <a href="{{url_for('index')}}">
-            <h5 class="white-text"><i class="material-icons">eco</i> iGrow</h5>
+            <h5 class="white-text hvr-float-shadow"><i class="material-icons">eco</i> iGrow</h5>
             </a>
             <p class="grey-text text-lighten-4">
               The new way to keep track of your planting and become a better
@@ -75,8 +76,8 @@
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text">Links</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="{{url_for('index')}}">Home</a></li>
-              <li><a class="grey-text text-lighten-3" href="{{url_for('add_planting')}}">Add</a></li>
+              <li><a class="grey-text text-lighten-3 hvr-float-shadow" href="{{url_for('index')}}">Home</a></li>
+              <li><a class="grey-text text-lighten-3 hvr-float-shadow" href="{{url_for('add_planting')}}">Add</a></li>
             </ul>
           </div>
         </div>

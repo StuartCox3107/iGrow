@@ -69,10 +69,11 @@
   </div>
 </div>
 
-
+<div class="container">
+<div class="row">
 {% for plant in planting_records %}
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+<div class="card z-depth-4" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="seed pack image">
   <div class="card-body">
     <h5 class="card-title">{{plant.plant_name}}</h5>
   </div>
@@ -81,13 +82,14 @@
     <li class="list-group-item">Notes: {{plant.plant_notes}}</li>
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link">More Details</a>
-    <a href="#" class="card-link">Update</a>
+    <a href="{{url_for('read_planting', plant_id=plant._id)}}" class="card-link">More Details</a>
+    <a href="{{url_for('update_planting', plant_id=plant._id)}}" class="card-link">Update</a>
     <a href="#" class="card-link">Delete</a>
   </div>
 </div>
 {% endfor %}
-
+</div>
+</div>
 
 
 {% endblock %}

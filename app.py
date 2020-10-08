@@ -19,7 +19,7 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', planting_records=mongo.db.planting_records.find())
 
 # route to adding a record page
 @app.route('/add_planting')

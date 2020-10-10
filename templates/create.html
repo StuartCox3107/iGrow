@@ -25,8 +25,8 @@
 <div class="row">
   <form action="{{ url_for('insert_planting') }}" method="POST" class="col s12">
     <!--datepicker for date planted field-->
-    <div class="row">
-      <div class="input-field col s12" id="matfix">
+    <div class="row" id="matfix">
+      <div class="input-field col s12">
         <i class="material-icons prefix">today</i>
         <input
           id="date_planted"
@@ -161,13 +161,10 @@
         Add & return home
         <i class="material-icons right">playlist_add_check</i>
       </button>
-       <button class="btn waves-effect waves-light light-green" id ="addanother" type="submit" name="action">
-        Add another
-        <i class="material-icons right">playlist_add</i>
-      </button>
     </div>
   </form>
 </div>
 </div>
+
 
 {% endblock %}

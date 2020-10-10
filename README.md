@@ -188,5 +188,6 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 
 - [Simen Daehlin](https://github.com/Eventyret) - [The Padwan Project](https://github.com/Eventyret/Padawan) for boilerplate template
 - Richard Wells_lead for the README.md Deployment section
+- Flask pagination from https://harishvc.com/2015/04/15/pagination-flask-mongodb/
 
 ---

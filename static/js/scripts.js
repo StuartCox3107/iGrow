@@ -1,7 +1,6 @@
 $(document).ready(function() {
             $('.datepicker').datepicker()
             $('.collapsible').collapsible();
-            $('select').material_select();
             $(".button-collapse").sideNav();
             $('input#input_text, textarea#textarea2').characterCounter();
         })

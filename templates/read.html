@@ -22,4 +22,22 @@
 </div>
 
 
+<div class="container">
+<div class="row">
+<img class="materialboxed" width="250" src="static/images/p1card1.png" alt="image of seed pack">
+<ul class="collection with-header">
+{% for plant in planting_records %}
+        <li class="collection-header"><h4>Plant: {{plant.plant_name}}</h4></li>
+        <li class="collection-item">Date planted: {{plant.date_planted}}</li>
+        <li class="collection-item">Planting notes: {{plant.plant_notes}}</li>
+        <li class="collection-item">Growing notes: {{plant.grow_notes}}</li>
+        <li class="collection-item">Harvest date: {{plant.harvest_date}}</li>
+        <li class="collection-item">Harvest notes: {{plant.harvest_notes}}</li>
+        <li class="collection-item">Grow again: {{plant.grow_again}}</li>
+{% endfor %}
+      </ul>
+</div>
+</div>
+
+
 {% endblock %}

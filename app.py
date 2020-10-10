@@ -26,6 +26,13 @@ def index():
 def add_planting():
     return render_template('create.html') 
 
+# to add new planting to database 
+@app.route('/insert_planting', methods=['POST'])
+def insert_planting():
+    planting_records = mongo.db.planting_records
+    planting_records.insert_one(request.form.to_dict())
+    return redirect(url_for('index'))
+
 # route to read page
 @app.route('/read_planting')
 def read_planting():
@@ -36,6 +43,7 @@ def read_planting():
 def update_planting():
     return render_template('update.html') 
 
+# to delete plant and route to index
 @app.route('/delete_planting/<plant_id>')
 def delete_planting(plant_id):
     mongo.db.planting_records.remove({'_id': ObjectId(plant_id)})

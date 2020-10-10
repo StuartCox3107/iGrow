@@ -36,6 +36,11 @@ def read_planting():
 def update_planting():
     return render_template('update.html') 
 
+@app.route('/delete_planting/<plant_id>')
+def delete_planting(plant_id):
+    mongo.db.planting_records.remove({'_id': ObjectId(plant_id)})
+    return redirect(url_for('index'))
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

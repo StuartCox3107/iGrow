@@ -34,6 +34,10 @@ a {
     padding-right: 30px;
 }
 
+.waves-effect {
+    background-color: #8bc34a;
+}
+
 
 /*create.html styling*/
 #createimage {

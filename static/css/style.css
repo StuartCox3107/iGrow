@@ -17,6 +17,7 @@ a {
 
 .btn {
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 /*index.html styling*/
@@ -38,6 +39,9 @@ a {
     background-color: #8bc34a;
 }
 
+#addbtn {
+    padding-bottom: 30px;
+}
 
 /*create.html styling*/
 #createimage {
@@ -59,10 +63,6 @@ a {
 
 #readtext {
     font-size: 2.5rem;
-}
-
-#readbtns {
-    padding-bottom: 30px;
 }
 
 /*update.html styling*/

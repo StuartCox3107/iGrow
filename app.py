@@ -59,6 +59,7 @@ def edit_plant(plant_id):
     return render_template('update.html', plant=the_plant)
 
 # route to update page
+# need to fix in that it now adds the edited item as a new item
 @app.route('/update_planting/<plant_id>', methods=['POST'])
 def update_planting(plant_id):
     plant = mongo.db.planting_records

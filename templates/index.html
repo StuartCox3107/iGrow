@@ -33,8 +33,7 @@
       <h5 class="card-title">Record your planting</h5>
       <p class="card-text">
         What did you plant, when and where did you plant it, what did you do to
-        help it grow when planting? Upload an image of the seed packet to help
-        you and others in the future.
+        help it grow when planting?
       </p>
     </div>
   </div>
@@ -102,5 +101,12 @@
     {% endfor %}
   </div>
 </div>
+
+<div>
+  <a
+    class="waves-effect waves-light btn"
+    href="{{url_for('add_planting')}}"
+    >Add planting</a
+  >
 
 {% endblock %}

@@ -57,12 +57,12 @@ a {
     padding-top: 30px;
 }
 
-#finalplantimage {
-    padding-left: 30px;
-}
-
 #readtext {
     font-size: 2.5rem;
+}
+
+#readbtns {
+    padding-bottom: 30px;
 }
 
 /*update.html styling*/

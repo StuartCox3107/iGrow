@@ -1,5 +1,6 @@
 {% extends 'base.html' %} {% block content %}
 
+<!--main image-->
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12 col-md-6 float-left" id="readimage">
@@ -22,39 +23,34 @@
 
 <div class="container">
   <div class="row">
-    <img
-      class="materialboxed"
-      width="150"
-      src="{{url_for('static', filename='/images/' + 'readimage.png')}}"
-      alt="image of seed pack"
-    />
-    <ul class="collection with-header">
-      <li class="collection-header"><h4>Plant: {{plant.plant_name}}</h4></li>
-      <li class="collection-item">Date planted: {{plant.date_planted}}</li>
-      <li class="collection-item">Planting notes: {{plant.plant_notes}}</li>
-      <li class="collection-item">Growing notes: {{plant.grow_notes}}</li>
-      <li class="collection-item">Harvest date: {{plant.harvest_date}}</li>
-      <li class="collection-item">Harvest notes: {{plant.plant_notes}}</li>
-      <li class="collection-item">Grow again: {{plant.grow_again}}</li>
-    </ul>
-    <div class="col-sm-12 col-md-6 float-left" id="finalplantimage">
-      <img
-        class="img-fluid"
-        src="{{url_for('static', filename='/images/' + 'readimage.png')}}"
-        alt="picture of someone walking past trees"
-      />
-      <a
-            class="waves-effect waves-light btn"
-            href="{{url_for('update_planting', plant_id=plant._id)}}"
-            class="card-link"
-            >Update</a
-          >
-          <a class="waves-effect waves-light btn" href="{{url_for('delete_planting', plant_id=plant._id)}}" class="card-link"
-            >Delete</a
-          >
-    </div>
-    
+  <div class="col">
+      <!--details of individual record fields-->
+      <ul class="collection with-header">
+        <li class="collection-header"><h4>Plant: {{plant.plant_name}}</h4></li>
+        <li class="collection-item">Date planted: {{plant.date_planted}}</li>
+        <li class="collection-item">Planting notes: {{plant.plant_notes}}</li>
+        <li class="collection-item">Growing notes: {{plant.grow_notes}}</li>
+        <li class="collection-item">Harvest date: {{plant.harvest_date}}</li>
+        <li class="collection-item">Harvest notes: {{plant.plant_notes}}</li>
+        <li class="collection-item">Grow again: {{plant.grow_again}}</li>
+      </ul>
   </div>
+</div>
+</div>
+<!--buttons for deleting and updating the record-->
+<div id="readbtns">
+  <a
+    class="waves-effect waves-light btn"
+    href="{{url_for('update_planting', plant_id=plant._id)}}"
+    class="card-link"
+    >Update</a
+  >
+  <a
+    class="waves-effect waves-light btn"
+    href="{{url_for('delete_planting', plant_id=plant._id)}}"
+    class="card-link"
+    >Delete</a
+  >
 </div>
 
 {% endblock %}

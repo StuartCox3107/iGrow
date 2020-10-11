@@ -17,8 +17,13 @@ a {
 
 .btn {
     margin-top: 10px;
-    margin-bottom: 30px;
+    font-size: 0.75rem;
 }
+
+.card {
+    width: 300px;
+}
+
 
 /*index.html styling*/
 #indeximage {
@@ -40,6 +45,10 @@ a {
 }
 
 #addbtn {
+    padding-bottom: 30px;
+}
+
+#addbtnindex {
     padding-bottom: 30px;
 }
 
@@ -65,6 +74,14 @@ a {
     font-size: 2.5rem;
 }
 
+#readbtns {
+    padding-bottom: 30px;
+}
+
+#addbtnindex {
+    padding-bottom: 30px;
+}
+
 /*update.html styling*/
 #updateimage {
     padding-top: 30px;
@@ -72,10 +89,6 @@ a {
 
 #updatetext {
     font-size: 2.5rem;
-}
-
-.browse-btn {
-    margin-left: 10px;
 }
 
 .input-field {

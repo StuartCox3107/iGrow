@@ -47,9 +47,11 @@ def insert_planting():
 
 # route to read page
 # route works, need to finish read functionality
-@app.route('/read_planting')
-def read_planting():
-    return render_template('read.html')
+@app.route('/read_planting/<plant_id>')
+def read_planting(plant_id):
+    return render_template('read.html', 
+    plant = mongo.db.planting_records.find_one(
+        {'_id': ObjectId(plant_id)}))
 
 # route to update page
 # not started, copy from create page

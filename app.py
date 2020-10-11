@@ -46,18 +46,33 @@ def insert_planting():
     return redirect(url_for('index'))
 
 # route to read page
-# route works, need to finish read functionality
+# working
 @app.route('/read_planting/<plant_id>')
 def read_planting(plant_id):
     return render_template('read.html', 
     plant = mongo.db.planting_records.find_one(
         {'_id': ObjectId(plant_id)}))
 
+@app.route('/update_planting/<plant_id>')
+def edit_plant(plant_id):
+    the_plant =  mongo.db.planting_records.find_one({"_id": ObjectId(plant_id)})
+    return render_template('update.html', plant=the_plant)
+
 # route to update page
-# not started, copy from create page
-@app.route('/update_planting')
-def update_planting():
-    return render_template('update.html') 
+@app.route('/update_planting/<plant_id>', methods=['POST'])
+def update_planting(plant_id):
+    plant = mongo.db.planting_records
+    plant.update( {'id': ObjectId(plant_id) },
+    {
+        'date_planted':request.form.get('date_planted'),
+        'plant_name':request.form.get('plant_name'),
+        'plant_notes':request.form.get('plant_notes'),
+        'grow_notes':request.form.get('grow_notes'),
+        'harvest_date':request.form.get('harvest_date'),
+        'harvest_notes':request.form.get('harvest_notes'),
+        'grow_again':request.form.get('grow_again')
+    })
+    return redirect(url_for('index'))
 
 # to delete plant and route to index
 # working

@@ -88,9 +88,8 @@ Colours are designed to be soft and pastel like, the below colour palette was ge
 
 ## Database features
 
-All data is stored in MongoDB in two collections
+All data is stored in MongoDB in one collection
 
-- Users - This stores the user's first name, username and password
 - Plants - this stores the users records of plantings, designed to be created/updated at three different times:
     - Planting time:
         - Year planted, month planted, what planted, packaging image (an upload of a picture of the seed packet), planting notes
@@ -103,7 +102,7 @@ All data is stored in MongoDB in two collections
 
 ## Features left to implement
 
-- 
+- User profiles: this will allow signed-in users to have personal profiles and edit their own plantings only
 
 ---
 
@@ -160,11 +159,12 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 
 ### Issues
 
+Bootstrap and materialize used
 
 ### Credits & acknowledgements
 
 - [Simen Daehlin](https://github.com/Eventyret) - [The Padwan Project](https://github.com/Eventyret/Padawan) for boilerplate template
 - Richard Wells_lead for the README.md Deployment section
-- Flask pagination from https://harishvc.com/2015/04/15/pagination-flask-mongodb/
+
 
 ---

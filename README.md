@@ -10,12 +10,12 @@
 
 ## Aim of the site
 
-This is a site for vegetable gardeners. Each gardener will have an individual profile that allows them 
-to record information about the vegetables they have grown. Initially they wil record the planting details, 
+This is a site for UK vegetable gardeners. The site will allow anyone to post their growing experience and will allow 
+gardeners to learn from themselves and each other . Initially they will record the planting details, 
 then as the plant grows during the season, they will record notes on the growing. Finally they will record 
-notes on the harvesting. The idea is that they will be able to have a record that allows them to learn from past 
-mistakes and problems and become better gardeners. As results are very dependent on individual growing circumstances 
-there will be no sharing of experiences with other users.
+notes on the harvesting. The idea is that they will be able to have a record that allows them to learn from their and others' past 
+mistakes and problems, and become better gardeners. As results are very dependent on local growing conditions the scope of the site 
+is limited to the UK/ 
 
 [Link to live site](https://i-grow.herokuapp.com/) opens in same tab, click back if needed
 ---
@@ -23,15 +23,15 @@ there will be no sharing of experiences with other users.
 ## User stories
 
 "As a new user: I want to understand what the site does and how it can help me. I want to feel that the site 
-will be easy and intuitive and that it will serve a purpose to me"
+will be easy and intuitive, and that it will serve a purpose to me"
 
-"As an existing user: I want a record of the vegetables I have grown over time, I want to know what has been successful and what has failed."
+"As an existing user: I want a record of the vegetables I have grown over time, I want to know what has been successful for me and for others, and what has failed."
 
-"As an existing user: I want to be able to update my records according to the lifecycle of plants throughout the growing season, I want to be able 
-to track the various stages of growing and use this information to help me  in the future"
+"As an existing user: I want to be able to update records according to the lifecycle of plants throughout the growing season, I want to be able 
+to track the various stages of growing and use this information to help me in the future"
 
-"As an existing user: I want this site to be specific to **my** experience and **my** growing conditions rather than using generalized information 
-available on other sites"
+"As an existing user: I want this site to be specific to the experience of growing vegetables in my country, and growing conditions in my country, rather than using generalized information 
+available on other worldwide sites"
 
 "As an existing user: I want a record of whether what I grow can be considered a success or not"
 
@@ -46,54 +46,31 @@ Click [Here](static/images/siteplan.pdf) for the site plan, opens in same tab, c
 ### Page 1: Landing page
 
 This page will give an overview of what the site purpose is to the user. It will explain what the site can do 
-to help them and an overview of how it works. It will also present options to login using 
-an existing username & password **or** choosing a link to sign-up
+to help them and an overview of how it works. 
 
-- [Landing page desktop & tablet](wireframes/P1landingdesktoptablet.png) opens in same tab, press back to return
-- [Landing page mobile](wireframes/P1landingmobile.png) opens in same tab, press back to return
+- [Landing page desktop & tablet](wireframes/11landingdesktoptablet.png) opens in same tab, press back to return
+- [Landing page mobile](wireframes/p1landingmobile.png) opens in same tab, press back to return
 
-### Page 2: Signed in page (HOME page for signed in users)
+### Page 2: Update page
 
-This page will have a personalised welcome, it will show the existing user saved entries in an overview format. It will also 
-have buttons to "ADD" (add a record- going to page 6) and "SIGN OUT", which will return to page 1. 
-Each entry overview will give the opportunity to "GO TO RECORD" (page 5), "UPDATE RECORD" (page 4) and "DELETE RECORD"
+This page will show the chosen individual record details, and allow for all fields to be updated through field entry boxes and an "ADD" button. 
 
-- [Signed in page desktop & tablet](wireframes/P2signedindesktoptablet.png) opens in same tab, press back to return
-- [Signed in page mobile](wireframes/P2signedinmobile.png) opens in same tab, press back to return
+- [Update page desktop & tablet](wireframes/P2updatedesktoptablet.png) opens in same tab, press back to return
+- [Update page mobile](wireframes/p2updatemobile.png) opens in same tab, press back to return
 
-### Page 3: Sign up page
+### Page 3: Read page
 
-This page will give an overview of how the site works. It will also have input fields for "NAME", "USERNAME", and "PASSWORD" as well as a 
-"JOIN UP" button.
+This page will show the chosen individual record. It will have "UPDATE" and "DELETE" buttons.
 
-- [Sign up page desktop & tablet](wireframes/P3signupdesktoptablet.png) opens in same tab, press back to return
-- [Sign up page mobile](wireframes/P3signupmobile.png) opens in same tab, press back to return
+- [Read page desktop & tablet](wireframes/P3readdesktoptablet.png) opens in same tab, press back to return
+- [Read page mobile](wireframes/P3readmobile.png) opens in same tab, press back to return
 
-### Page 4: Update page
+### Page 4: Create page
 
-This page will show the chosen individual record, and allow for all fields to be updated through field entry boxes and an "UPDATE NOW" button. 
-It will also have a "DELETE" button.
+This page will give the opportunity for the user to create a planting record. It will also have a button to add & return home
 
-
-- [Update page desktop & tablet](wireframes/P4updatedesktoptablet.png) opens in same tab, press back to return
-- [Update page mobile](wireframes/P4updatemobile.png) opens in same tab, press back to return
-
-### Page 5: Read page
-
-This page will show the chosen individual record. It will have "EDIT" and "HOME" buttons.
-
-
-- [Read page desktop & tablet](wireframes/P5readdesktoptablet.png) opens in same tab, press back to return
-- [Read page mobile](wireframes/P5readmobile.png) opens in same tab, press back to return
-
-### Page 6: Create page
-
-This page will give the opportunity for the user to create a planting record. It will also have buttons to give the opportunity 
-to "ADD & RETURN HOME" or "ADD ANOTHER".
-
-
-- [Create page desktop & tablet](wireframes/P6createdesktoptablet.png) opens in same tab, press back to return
-- [Create page mobile](wireframes/P6createmobile.png) opens in same tab, press back to return
+- [Create page desktop & tablet](wireframes/P4createdesktoptablet.png) opens in same tab, press back to return
+- [Create page mobile](wireframes/P4createmobile.png) opens in same tab, press back to return
 
 ---
 

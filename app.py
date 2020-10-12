@@ -53,17 +53,17 @@ def read_planting(plant_id):
     plant = mongo.db.planting_records.find_one(
         {'_id': ObjectId(plant_id)}))
 
-@app.route('/update_planting/<plant_id>')
-def edit_plant(plant_id):
+@app.route('/edit_planting/<plant_id>')
+def edit_planting(plant_id):
     the_plant =  mongo.db.planting_records.find_one({"_id": ObjectId(plant_id)})
     return render_template('update.html', plant=the_plant)
 
 # route to update page
-# need to fix in that it now adds the edited item as a new item
+# need to work out making it delete existing one rather than add a new as well as existing
 @app.route('/update_planting/<plant_id>', methods=['POST'])
 def update_planting(plant_id):
     plant = mongo.db.planting_records
-    plant.update( {'id': ObjectId(plant_id) },
+    plant.update( {'_id': ObjectId(plant_id)},
     {
         'date_planted':request.form.get('date_planted'),
         'plant_name':request.form.get('plant_name'),

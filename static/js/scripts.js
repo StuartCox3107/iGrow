@@ -16,5 +16,6 @@ $(document).ready(function() {
       });
 
       document.getElementById("matfix").addEventListener("click", function(e) {
-	e.stopPropagation();
+    e.stopPropagation();
+    
 });

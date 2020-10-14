@@ -27,9 +27,29 @@ mongo = PyMongo(app)
 # working but needs pagination
 @app.route('/')
 @app.route('/index')
-def index(): 
+def index():
+    page, per_page, offset = get_page_args(page_parameter='page', per_page_parameter='per_page')
+    per_page = 10
+    offset = page * per_page
+
+    # Gets the total values to be used later
+    total = mongo.db.planting_records.find().count()
+
+    # Gets all the values
+    planting_record = mongo.db.planting_records.find()
+    # Paginates the values
+    paginated_records = planting_record[offset: offset + per_page]
+
+    pagination = Pagination(page=page, per_page=per_page, total=total,
+                            css_framework='materialize')
+
+
     return render_template('index.html',
-    planting_records=mongo.db.planting_records.find())
+                           plant=paginated_records,
+                           page=page,
+                           per_page=per_page,
+                           pagination=pagination,
+                           )
 
 # route to adding a record page
 # working

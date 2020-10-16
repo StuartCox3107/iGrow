@@ -29,10 +29,10 @@ mongo = PyMongo(app)
 @app.route('/index')
 def index():
     page, per_page, offset = get_page_args(page_parameter='page', per_page_parameter='per_page')
-    per_page = 10
+    per_page = 9
     offset = page * per_page
 
-    # Gets the total values to be used later
+    # Gets the total values to be used later, planting_records is my Mongo collection
     total = mongo.db.planting_records.find().count()
 
     # Gets all the values
@@ -73,7 +73,7 @@ def read_planting(plant_id):
     plant = mongo.db.planting_records.find_one(
         {'_id': ObjectId(plant_id)}))
 
-@app.route('/edit_planting/<plant_id>')
+@app.route('/edit_planting/<plant_id>', methods=['POST', 'GET'])
 def edit_planting(plant_id):
     the_plant =  mongo.db.planting_records.find_one({"_id": ObjectId(plant_id)})
     return render_template('update.html', plant=the_plant)

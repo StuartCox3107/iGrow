@@ -1,7 +1,7 @@
 # import modules needed
 
 import os
-from flask import Flask, render_template, redirect, request, url_for
+from flask import Flask, render_template, redirect, request, url_for, flash
 from flask_pymongo import PyMongo
 from flask_paginate import Pagination, get_page_args
 from bson.objectid import ObjectId
@@ -73,14 +73,14 @@ def read_planting(plant_id):
     plant = mongo.db.planting_records.find_one(
         {'_id': ObjectId(plant_id)}))
 
-@app.route('/edit_planting/<plant_id>', methods=['POST', 'GET'])
+@app.route('/edit_planting/<plant_id>')
 def edit_planting(plant_id):
     the_plant =  mongo.db.planting_records.find_one({"_id": ObjectId(plant_id)})
     return render_template('update.html', plant=the_plant)
 
 # route to update page
 # need to work out making it delete existing one rather than add a new as well as existing
-@app.route('/update_planting/<plant_id>', methods=['POST'])
+@app.route('/update_planting/<plant_id>', methods=['POST', 'GET'])
 def update_planting(plant_id):
     plant = mongo.db.planting_records
     plant.update( {'_id': ObjectId(plant_id)},

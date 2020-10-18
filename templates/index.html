@@ -1,9 +1,9 @@
 {% extends 'base.html' %} {% block content %}
-<div class="container-fluid">
+<div class="container">
   <div class="row">
     <div class="col s12 m12 l6 float-left" id="indeximage">
       <img
-        class="img-fluid"
+        class="responsive-img"
         src="{{url_for('static', filename='/images/' + 'handholdingsoil.png')}}"
         alt="picture of a hand holding soil"
       />
@@ -82,9 +82,9 @@
 
 {{ pagination.links }}
 
-  <div class="row">
+  <div class="row center-align">
     {% for plant in plants %}
-    <div class="col s12 m5">
+    <div class="col s12 m3 l4">
       <div class="card small z-depth-4">
         <div class="card-content">
         

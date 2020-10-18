@@ -1,10 +1,10 @@
 {% extends 'base.html' %} {% block content %}
 
-<div class="container-fluid">
+<div class="container">
   <div class="row">
-    <div class="col s12 col m6 float-left" id="createimage">
+    <div class="col s12 col m6 float-left valign-wrapper" id="createimage">
       <img
-        class="img-fluid"
+        class="responsive-img"
         src="{{url_for('static', filename='/images/' + 'createimage.png')}}"
         alt="picture of three trees"
       />

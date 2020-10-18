@@ -24,28 +24,30 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 mongo = PyMongo(app)
 
 # sets route so that index.html is main page and displays entries
-# working but needs pagination
+
 @app.route('/')
 @app.route('/index')
 def index():
-    page, per_page, offset = get_page_args(page_parameter='page', per_page_parameter='per_page')
-    per_page = 9
+    page, per_page, offset = get_page_args(page_parameter='page', per_page_parameter='per_page')  
+    per_page = 6
+    
+
     offset = page * per_page
 
-    # Gets the total values to be used later, planting_records is my Mongo collection
+    # Gets the total values to be used later
     total = mongo.db.planting_records.find().count()
-
     # Gets all the values
-    planting_record = mongo.db.planting_records.find()
+    planting_record = list(mongo.db.planting_records.find())
     # Paginates the values
     paginated_records = planting_record[offset: offset + per_page]
+    print(paginated_records)
 
     pagination = Pagination(page=page, per_page=per_page, total=total,
                             css_framework='materialize')
 
 
     return render_template('index.html',
-                           plant=paginated_records,
+                           plants=paginated_records,
                            page=page,
                            per_page=per_page,
                            pagination=pagination,
@@ -73,12 +75,13 @@ def read_planting(plant_id):
     plant = mongo.db.planting_records.find_one(
         {'_id': ObjectId(plant_id)}))
 
+# route to edit page
 @app.route('/edit_planting/<plant_id>')
 def edit_planting(plant_id):
     the_plant =  mongo.db.planting_records.find_one({"_id": ObjectId(plant_id)})
     return render_template('update.html', plant=the_plant)
 
-# route to update page
+
 # need to work out making it delete existing one rather than add a new as well as existing
 @app.route('/update_planting/<plant_id>', methods=['POST', 'GET'])
 def update_planting(plant_id):

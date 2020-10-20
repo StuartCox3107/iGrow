@@ -83,18 +83,18 @@ def edit_planting(plant_id):
 # need to work out making it delete existing one rather than add a new as well as existing
 @app.route('/update_planting/<plant_id>', methods=['POST', 'GET'])
 def update_planting(plant_id):
-    plant = mongo.db.planting_records
-    plant.update( {'_id': ObjectId(plant_id)},
-    {
-        'date_planted':request.form.get('date_planted'),
-        'plant_name':request.form.get('plant_name'),
-        'plant_notes':request.form.get('plant_notes'),
-        'grow_notes':request.form.get('grow_notes'),
-        'harvest_date':request.form.get('harvest_date'),
-        'harvest_notes':request.form.get('harvest_notes'),
-        'grow_again':request.form.get('grow_again')
-    })
-    return redirect(url_for('index'))
+        plant = mongo.db.planting_records
+        plant.update( {'_id': ObjectId(plant_id)},
+            {
+            'date_planted':request.form.get('date_planted'),
+            'plant_name':request.form.get('plant_name'),
+            'plant_notes':request.form.get('plant_notes'),
+            'grow_notes':request.form.get('grow_notes'),
+            'harvest_date':request.form.get('harvest_date'),
+            'harvest_notes':request.form.get('harvest_notes'),
+            'grow_again':request.form.get('grow_again')
+            })
+        return redirect(url_for('index'))
 
 # to delete plant and route to index
 # working

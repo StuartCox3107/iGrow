@@ -32,7 +32,7 @@ def index():
     per_page = 6
     
 
-    offset = page * per_page
+    offset = (page -1) * per_page
 
     # Gets the total values to be used later
     total = mongo.db.planting_records.find().count()
@@ -40,11 +40,9 @@ def index():
     planting_record = list(mongo.db.planting_records.find())
     # Paginates the values
     paginated_records = planting_record[offset: offset + per_page]
-    print(paginated_records)
-
+    
     pagination = Pagination(page=page, per_page=per_page, total=total,
                             css_framework='materialize')
-
 
     return render_template('index.html',
                            plants=paginated_records,

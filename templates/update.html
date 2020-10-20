@@ -53,11 +53,11 @@
       <div class="input-field col s12">
         <i class="material-icons prefix">create</i>
         <textarea
-          name="plant_notes"
           id="plant_notes"
+          name="plant_notes"
           class="materialize-textarea"
           value="{{plant.plant_notes}}"
-        ></textarea>
+        >{{plant.plant_notes}}</textarea>
         <label for="icon_telephone">Planting notes</label>
       </div>
     </div>
@@ -71,7 +71,7 @@
           id="grow_notes"
           class="materialize-textarea"
           value="{{plant.grow_notes}}"
-        ></textarea>
+        >{{plant.grow_notes}}</textarea>
         <label for="icon_telephone">Growing notes</label>
       </div>
     </div>
@@ -100,7 +100,7 @@
           id="harvest_notes"
           class="materialize-textarea"
           value="{{plant.harvest_notes}}"
-        ></textarea>
+        >{{plant.harvest_notes}}</textarea>
         <label for="icon_telephone">Harvest notes</label>
       </div>
     </div>
@@ -110,7 +110,11 @@
     <div class="row">
       <div class="switch">
         <label>
-          <input id="grow_again" name="grow_again" type="checkbox" value="{{plant.grow_again}}"/>
+            {% if plant.grow_again %}
+                <input id="grow_again" name="grow_again" type="checkbox" checked/>
+            {% else %}
+                <input id="grow_again" name="grow_again" type="checkbox"/>
+            {% endif %}
           <span class="lever light-green"></span>
           Would you grow again?
         </label>

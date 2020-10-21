@@ -35,6 +35,9 @@ available on other worldwide sites"
 
 "As an existing user: I want a record of whether what I grow can be considered a success or not"
 
+"As the site owner: I want to ensure that the site is focussed on UK plant growings to best 
+serve the target market. Anything beyond this should be deleted"
+
 ---
 
 ## Site plan, features & wireframes
@@ -116,12 +119,12 @@ All data is stored in MongoDB in one collection
 - [Balsamiq](https://balsamiq.com/) used to design wireframes, opens in same tab, press back to return
 - [Undraw](https://undraw.co/illustrations) used for cartoon images on site, opens in same tab, press back to return
 - [Materialize](https://materializecss.com/) used for the site header & footer, opens in same tab, press back to return
-- [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) for layout framework, opens in same tab, press back to return
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/) as a framework, opens in same tab, press back to return
 - [MongoDB](https://www.mongodb.com/) as the database store
 - [Coolors](https://coolors.co/) used for colour palette
 - [Material Icons]
 - [Hover.css](https://ianlunn.github.io/Hover/)
+- [Tiny PNG]
 
 ---
 

@@ -23,78 +23,76 @@
 <!--index.html cards-->
 
 <div class="container">
-<div class="row">
-<div class="col s12 m12 l4">
-  <div class="card large z-depth-4">
-    <img
-      src="{{url_for('static', filename='/images/' + 'p1card1.png')}}"
-      class="card-image"
-      alt="page 1 card general image"
-    />
+  <div class="row">
+    <div class="col s12 m12 l4">
+      <div class="card large z-depth-4">
+        <img
+          src="{{url_for('static', filename='/images/' + 'p1card1.png')}}"
+          class="card-image"
+          alt="page 1 card general image"
+        />
 
-      <h5 class="card-title">Record your planting</h5>
-      <p class="card-content">
-        What did you plant, when and where did you plant it, what did you do to
-        help it grow when planting?
-      </p>
- 
-  </div>
-  </div>
-  <div class="col s12 m12 l4">
-  <div class="card large z-depth-4">
-    <img
-      src="{{url_for('static', filename='/images/' + 'p1card2.png')}}"
-      class="card-image"
-      alt="page 1 card general image"
-    />
- 
-      <h5 class="card-title">Add to your experience as you go</h5>
-      <p class="card-content">
-        What did you do as it grew, what mistakes did you make, how did it end
-        up, would you grow it again?
-      </p>
- 
-  </div>
-  </div>
-  <div class="col s12 m12 l4">
-  <div class="card large z-depth-4">
-    <img
-      src="{{url_for('static', filename='/images/' + 'p1card3.png')}}"
-      class="card-image"
-      alt="page 1 card general image"
-    />
- 
-      <h5 class="card-title">Learn from others</h5>
-      <p class="card-content">
-        Look at your past experience and look at the experiences of others,
-        learn from their successes and mistakes. See what has worked for them
-        and what hasn't.
-      </p>
+        <h5 class="card-title">Record your planting</h5>
+        <p class="card-content">
+          What did you plant, when and where did you plant it, what did you do
+          to help it grow when planting?
+        </p>
+      </div>
+    </div>
+    <div class="col s12 m12 l4">
+      <div class="card large z-depth-4">
+        <img
+          src="{{url_for('static', filename='/images/' + 'p1card2.png')}}"
+          class="card-image"
+          alt="page 1 card general image"
+        />
 
-  </div>
+        <h5 class="card-title">Add to your experience as you go</h5>
+        <p class="card-content">
+          What did you do as it grew, what mistakes did you make, how did it end
+          up, would you grow it again?
+        </p>
+      </div>
+    </div>
+    <div class="col s12 m12 l4">
+      <div class="card large z-depth-4">
+        <img
+          src="{{url_for('static', filename='/images/' + 'p1card3.png')}}"
+          class="card-image"
+          alt="page 1 card general image"
+        />
+
+        <h5 class="card-title">Learn from others</h5>
+        <p class="card-content">
+          Look at your past experience and look at the experiences of others,
+          learn from their successes and mistakes. See what has worked for them
+          and what hasn't.
+        </p>
+      </div>
+    </div>
   </div>
 </div>
-</div>
 
+<!--search bar-->
 <h2>Planting records</h2>
 
 <div class="container">
-
-{{ pagination.links }}
-<form>
-        <div class="input-field">
-          <input id="search" type="search" required>
-          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-          <i class="material-icons">close</i>
-        </div>
-      </form>
-
+  {{ pagination.links }}
+  <form>
+    <div class="input-field">
+      <input id="search" type="search" required />
+      <label class="label-icon" for="search"
+        ><i class="material-icons">search</i></label
+      >
+      <i class="material-icons">close</i>
+    </div>
+  </form>
+<!--shows records of plantings from mongo-->
   <div class="row center-align">
     {% for plant in plants %}
     <div class="col s12 m3 l4">
       <div class="card small z-depth-4">
         <div class="card-content">
-        
           <span class="card-title">{{plant.plant_name}}</span>
           <p>Planted: {{plant.date_planted}}</p>
           <p>Notes: {{plant.plant_notes}}</p>
@@ -111,7 +109,10 @@
             class="card-link"
             >Update</a
           >
-          <a class="waves-effect waves-light btn btn-block hvr-float-shadow white-text" href="{{url_for('delete_planting', plant_id=plant._id)}}" class="card-link"
+          <a
+            class="waves-effect waves-light btn btn-block hvr-float-shadow white-text"
+            href="{{url_for('delete_planting', plant_id=plant._id)}}"
+            class="card-link"
             >Delete</a
           >
         </div>
@@ -121,7 +122,7 @@
   </div>
   {{ pagination.links }}
 </div>
-
+<!--button going to page to add planting-->
 <div id="addbtnindex">
   <a
     class="waves-effect waves-light btn hvr-float-shadow white-text"

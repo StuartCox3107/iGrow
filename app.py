@@ -74,13 +74,15 @@ def read_planting(plant_id):
         {'_id': ObjectId(plant_id)}))
 
 # route to edit page
+#working
 @app.route('/edit_planting/<plant_id>')
 def edit_planting(plant_id):
     the_plant =  mongo.db.planting_records.find_one({"_id": ObjectId(plant_id)})
     return render_template('update.html', plant=the_plant)
 
 
-# need to work out making it delete existing one rather than add a new as well as existing
+# update function
+#working
 @app.route('/update_planting/<plant_id>', methods=['POST', 'GET'])
 def update_planting(plant_id):
         plant = mongo.db.planting_records

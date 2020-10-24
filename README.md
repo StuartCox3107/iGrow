@@ -130,7 +130,9 @@ All data is stored in MongoDB in one collection
 
 ## Testing
 
-
+- HTML
+- CSS
+- Python: Code tested with pylint: 
 
 ---
 

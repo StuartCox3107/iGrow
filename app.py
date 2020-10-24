@@ -21,6 +21,16 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 
 mongo = PyMongo(app)
 
+"""Renders page for 404 error handling
+Args:
+    e: If 404 error triggered dur to page not found
+Returns:
+    The rendered 404.html page with button to return home.
+"""
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
 @app.route('/')
 @app.route('/index')
 def index():

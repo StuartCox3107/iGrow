@@ -21,14 +21,14 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 
 mongo = PyMongo(app)
 
-"""Renders page for 404 error handling
-Args:
-    e: If 404 error triggered dur to page not found
-Returns:
-    The rendered 404.html page with button to return home.
-"""
 @app.errorhandler(404)
 def page_not_found(e):
+    """Renders page for 404 error handling
+    Args:
+        e: If error triggered due to page not found
+    Returns:
+        The rendered 404.html page with button to return home.
+    """
     return render_template('404.html'), 404
 
 @app.route('/')
@@ -84,9 +84,12 @@ def read_planting(plant_id):
     Returns:
         The rendered read.html.
     """
-    return render_template('read.html',
-    plant = mongo.db.planting_records.find_one(
-        {'_id': ObjectId(plant_id)}))
+    if plant_id == "":
+        print ("Record deleted")
+    else:
+        return render_template('read.html',
+        plant = mongo.db.planting_records.find_one(
+            {'_id': ObjectId(plant_id)}))
 
 @app.route('/edit_planting/<plant_id>')
 def edit_planting(plant_id):

@@ -84,11 +84,8 @@ def read_planting(plant_id):
     Returns:
         The rendered read.html.
     """
-    if plant_id == "":
-        print ("Record deleted")
-    else:
-        return render_template('read.html',
-        plant = mongo.db.planting_records.find_one(
+    return render_template('read.html',
+    plant = mongo.db.planting_records.find_one(
             {'_id': ObjectId(plant_id)}))
 
 @app.route('/edit_planting/<plant_id>')

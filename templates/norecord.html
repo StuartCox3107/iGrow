@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col s12 col m6 float-left valign-wrapper" id="createimage">
+      <img
+        class="responsive-img"
+        src="{{url_for('static', filename='/images/' + 'norecord.png')}}"
+        alt="picture of man putting file in bin"
+      />
+    </div>
+    <div class="col s12 col m6 my-auto text-sm-center" id="createtext">
+      <h2>Oh No!</h2>
+      <p>That record no longer exists</p>
+      <br />
+      <p>
+        Click the button to go back home
+      </p>
+    </div>
+  </div>
+</div>
+
+  <p><a class="waves-effect waves-light btn btn-block hvr-float-shadow white-text" href="{{ url_for('index') }}"><i class="material-icons left">home</i> Go back home</a></p>
+  
+{% endblock %}

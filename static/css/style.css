@@ -24,6 +24,10 @@ a {
     float: left;
 }
 
+#sidenav-logo {
+    color: #8bc34a;
+}
+
 /*index.html styling*/
 #indeximage {
     padding-top: 30px;

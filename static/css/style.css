@@ -20,6 +20,10 @@ a {
     font-size: 0.75rem;
 }
 
+.sidenav-trigger {
+    float: left;
+}
+
 /*index.html styling*/
 #indeximage {
     padding-top: 30px;

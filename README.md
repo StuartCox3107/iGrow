@@ -118,7 +118,7 @@ All data is stored in MongoDB in one collection
 - [GitHub](https://github.com/) To host the repositories for this project and the live website preview, opens in same tab, press back to return
 - [Balsamiq](https://balsamiq.com/) used to design wireframes, opens in same tab, press back to return
 - [Undraw](https://undraw.co/illustrations) used for cartoon images on site, opens in same tab, press back to return
-- [Materialize](https://materializecss.com/) used for the site header & footer, opens in same tab, press back to return
+- [Materialize](https://materializecss.com/) framework used for site layout & design
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/) as a framework, opens in same tab, press back to return
 - [MongoDB](https://www.mongodb.com/) as the database store
 - [Coolors](https://coolors.co/) used for colour palette

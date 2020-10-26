@@ -1,5 +1,5 @@
 <div align="center">
-<img src="assets/images/PLACEHOLDERFORMAINIMAGE" width="350">
+<img src="assets/images/readmeimage" width="350">
 </div>
 
 ---

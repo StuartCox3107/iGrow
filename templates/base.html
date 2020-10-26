@@ -13,10 +13,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link
       href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2:400,600,700,800&display=swap"
       rel="stylesheet"
@@ -33,12 +30,14 @@
   <body>
     <header>
       <!--materialize navbar-->
+      <div class="container">
+      <div class="row">
         <nav>
           <div class="nav-wrapper light-green">
             <a href="{{url_for('index')}}" class="brand-logo hvr-float-shadow">
               <i class="material-icons badge">eco</i>iGrow</a
             >
-            <a href="#" data-activates="mobile-demo" class="sidenav-trigger"
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"
               ><i class="material-icons">menu</i></a
             >
             <ul class="right hide-on-med-and-down">
@@ -51,6 +50,8 @@
             </ul>
           </div>
         </nav>
+        </div>
+        </div>
     </header>
     
 

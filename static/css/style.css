@@ -20,6 +20,10 @@ a {
     font-size: 0.75rem;
 }
 
+.btn:hover {
+  background-color: #666666;
+}
+
 .sidenav-trigger {
     float: left;
 }

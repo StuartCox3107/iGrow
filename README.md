@@ -150,12 +150,12 @@ To deploy this page to Heroku:
 6. Confirm the linking of the app to the correct Github repository.
 In the Heroku dashboard, click "Settings" > "Reveal Config Vars".
 7. Set the below config vars:
-| Key | Value |
-| --- | --- |
-| DEBUG | FALSE |
-| IP | 0.0.0.0 |
-| MONGO_URI | mongodb+srv://<username>:<password>@<cluster_name>.v4dab.mongodb.net/<database_name>?retryWrites=true&w=majority |
-| PORT | 5000 |
+| Key  | Value  |   
+|---|---|
+| DEBUG  | FALSE  |  
+| IP  | 0.0.0.0  |  
+| MONGO_URI  | mongodb+srv://<username>:<password>@<cluster_name>.v4dab.mongodb.net/<database_name>?retryWrites=true&w=majority  |
+| PORT  | 5000  |
 8. In the Heroku dashboard. click "Deploy".
 9. In the "Manual Deployment" section of this page, make sure the master branch is selected then click "Deploy Branch". 
 
@@ -180,7 +180,7 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 
 ### Issues
 
-Bootstrap and materialize used
+Bootstrap and materialize used initially until I realised that this causes issues
 
 ### Credits & acknowledgements
 

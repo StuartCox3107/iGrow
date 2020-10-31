@@ -151,7 +151,7 @@ To deploy this page to Heroku:
 In the Heroku dashboard, click "Settings" > "Reveal Config Vars".
 7. Set the below config vars:
 | Key | Value |
-|---|---|
+| --- | --- |
 | DEBUG | FALSE |
 | IP | 0.0.0.0 |
 | MONGO_URI | mongodb+srv://<username>:<password>@<cluster_name>.v4dab.mongodb.net/<database_name>?retryWrites=true&w=majority |

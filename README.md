@@ -1,5 +1,5 @@
 <div align="center">
-<img src="static/images/readmeimage.png" width="550">
+<img src="static/images/readmeimage.png" width="750">
 </div>
 
 ---
@@ -120,11 +120,12 @@ All data is stored in MongoDB in one collection
 - [Undraw](https://undraw.co/illustrations) used for cartoon images on site, opens in same tab, press back to return
 - [Materialize](https://materializecss.com/) framework used for site layout & design
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/) as a framework, opens in same tab, press back to return
-- [MongoDB](https://www.mongodb.com/) as the database store
-- [Coolors](https://coolors.co/) used for colour palette
-- [Material Icons]
-- [Hover.css](https://ianlunn.github.io/Hover/)
-- [Tiny PNG]
+- [MongoDB](https://www.mongodb.com/) as the database store, opens in same tab, press back to return
+- [Coolors](https://coolors.co/) used for colour palette, opens in same tab, press back to return
+- [Material Design](https://material.io/resources/icons/?style=baseline) used for icons, opens in same tab, press back to return
+- [Hover.css](https://ianlunn.github.io/Hover/) used to add button hover effect , opens in same tab, press back to return
+- [Tiny PNG](https://tinypng.com/) used to compress images, opens in same tab, press back to return
+- [Heroku](https://dashboard.heroku.com/apps) used to deploy project, opens in same tab, press back to return
 
 ---
 
@@ -132,18 +133,33 @@ All data is stored in MongoDB in one collection
 
 - HTML
 - CSS
+- Javascript
 - Python: Code tested with pylint: 
 
 ---
 
 ## Deployment
 
-To deploy this page to GitHub Pages from its [GitHub repository], the following steps were taken: 
+To deploy this page to Heroku:
 
+1. Create a ```requirements.txt``` file by using the terminal command ```pip freeze > requirements.txt```.
+2. Create a ```Procfile``` by using the terminal command ```echo web: python app.py > Procfile```.
+3. ```git add``` and ```git commit``` to commit the newly created files, then ```git push``` the project to GitHub.
+4. Go to Heroku and create a new app by clicking the "New" button. Give a name and set the region to Europe.
+5. From the dashboard, click on "Deploy" > "Deployment method", and select Github.
+6. Confirm the linking of the app to the correct Github repository.
+In the Heroku dashboard, click "Settings" > "Reveal Config Vars".
+7. Set the below config vars:
+| Key | Value |
+|-|-|
+| DEBUG | FALSE |
+| IP | 0.0.0.0 |
+| MONGO_URI | mongodb+srv://<username>:<password>@<cluster_name>.v4dab.mongodb.net/<database_name>?retryWrites=true&w=majority |
+| PORT | 5000 |
+8. In the Heroku dashboard. click "Deploy".
+9. In the "Manual Deployment" section of this page, make sure the master branch is selected then click "Deploy Branch". 
 
- 
-
-### How to run this project locally
+## How to run this project locally
 
 To clone this project from GitHub:
 
@@ -151,7 +167,7 @@ To clone this project from GitHub:
 2. In the Clone with HTTPs section, copy the clone URL for the repository. 
 3. In your local IDE open Git Bash.
 4. Change the current working directory to the location where you want the cloned directory to be made.
-5. Type ```git clone```, and then paste the URL you copied in Step 3.
+5. Type ```git clone```, and then paste the URL you copied in Step 2.
 ```console
 git clone https://github.com/StuartCox3107/iGrow
 ```

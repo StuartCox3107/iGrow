@@ -102,11 +102,12 @@ def insert_planting():
 
 @app.route('/read_planting/<plant_id>')
 def read_planting(plant_id):
-    """Renders the details of the chosen plant
+    """Checks that the record being searched exists and 
+    renders the details of the chosen  if it does otherwise shows an error page
     Args:
         plant_id: The id of the chosen plant
     Returns:
-        The rendered read.html.
+        The rendered read.html (or norecord.html if record doesn't exist).
     """
     if mongo.db.planting_records.find_one({'_id': ObjectId(plant_id)}) is None:
         return render_template('norecord.html')

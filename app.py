@@ -56,6 +56,23 @@ def index():
                            pagination=pagination,
                            )
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    page, per_page, offset = get_page_args(page_parameter='page',per_page_parameter='per_page')
+    per_page = 6
+    offset = (page -1) * per_page
+    query = request.form.get("query")
+    findplants = list(mongo.db.planting_records.find({"$text": {"$search": query}}))
+    paginated_records = findplants[offset: offset + per_page]
+    pagination = Pagination(page=page, per_page=per_page, findplants=findplants,
+                            css_framework='materialize')
+    return render_template('index.html',
+                           plants=paginated_records,
+                           page=page,
+                           per_page=per_page,
+                           pagination=pagination,
+                           )
+
 @app.route('/add_planting')
 def add_planting():
     """Renders the page for creating a new record

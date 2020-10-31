@@ -73,9 +73,9 @@
   </div>
 </div>
 
-<!--search bar-->
 <h2>Planting records</h2>
-
+<!--search bar-->
+<div class="container">
   <div class="row card-panel grey lighten-5">
     <form action="{{ url_for('search') }}" method="post" class="col s12">
             <div class="row valign-wrapper center-align">
@@ -85,16 +85,17 @@
                     <label for="query">Search Plants</label>
                 </div>
                 <div class="col s12 m4">
-                    <a href="{{ url_for('index') }}" class="red btn text-shadow">Reset</a>
-                    <button type="submit" class="light-blue darken-1 btn text-shadow">
+                    <a href="{{ url_for('index') }}" class="waves-effect waves-light btn btn-block hvr-float-shadow white-text">Reset</a>
+                    <button type="submit" class="waves-effect waves-light btn btn-block hvr-float-shadow white-text">
                         <i class="fas fa-search left"></i> Search
                     </button>
                 </div>
             </div>
         </form>
   </div>
-  {{ pagination.links }}
+  </div>
 <!--shows records of plantings from mongo-->
+<div class="container">
   <div class="row center-align">
     {% for plant in plants %}
     <div class="col s12 m3 l4">
@@ -127,6 +128,7 @@
     </div>
     {% endfor %}
   {{ pagination.links }}
+</div>
 </div>
 <!--button going to page to add planting-->
 <div id="addbtnindex">

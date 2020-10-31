@@ -46,10 +46,12 @@ serve the target market. Anything beyond this should be deleted"
 
 Click [Here](static/images/siteplan.pdf) for the site plan, opens in same tab, click back if needed
 
+## Features & wireframes
+ 
 ### Page 1: Landing page
 
-This page will give an overview of what the site purpose is to the user. It will explain what the site can do 
-to help them and an overview of how it works. 
+This page will give an overview of what the site purpose is to the user. It will explain what the site can do to help them, and an overview of how it works. It will also 
+display some of records with pagination and search functionality.
 
 - [Landing page desktop & tablet](wireframes/11landingdesktoptablet.png) opens in same tab, press back to return
 - [Landing page mobile](wireframes/p1landingmobile.png) opens in same tab, press back to return
@@ -70,10 +72,18 @@ This page will show the chosen individual record. It will have "UPDATE" and "DEL
 
 ### Page 4: Create page
 
-This page will give the opportunity for the user to create a planting record. It will also have a button to add & return home
+This page will give the opportunity for the user to create a planting record. It will also have a button to add the record & return home.
 
 - [Create page desktop & tablet](wireframes/P4createdesktoptablet.png) opens in same tab, press back to return
 - [Create page mobile](wireframes/P4createmobile.png) opens in same tab, press back to return
+
+### Page 5: 404 error page
+
+This page will show in the case of a 404 error.
+
+### Page 6: Record not found page
+
+This case will show if a user trys to read a record that cannot be found. for example by using the back buttons or copy/paste post deletion.
 
 ---
 
@@ -187,7 +197,6 @@ Bootstrap and materialize used initially until I realised that this causes issue
 ### Credits & acknowledgements
 
 - [Simen Daehlin](https://github.com/Eventyret) - [The Padwan Project](https://github.com/Eventyret/Padawan) for boilerplate template
-- Richard Wells_lead for the README.md Deployment section
 
 
 ---

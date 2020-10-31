@@ -55,7 +55,14 @@ def index():
                            per_page=per_page,
                            pagination=pagination,
                            )
-
+    """Gets all records from database,
+    matching the searched plant name, and paginates 6 records to
+    display on the rendered landing page.
+    Args:
+        None
+    Returns:
+        The rendered index.html with 6 paginated records and the searched plant.
+    """
 @app.route("/search", methods=["GET", "POST"])
 def search():
     page, per_page, offset = get_page_args(page_parameter='page',per_page_parameter='per_page')
@@ -101,6 +108,8 @@ def read_planting(plant_id):
     Returns:
         The rendered read.html.
     """
+    if mongo.db.planting_records.find_one({'_id': ObjectId(plant_id)}) is None:
+        return render_template('norecord.html')
     return render_template('read.html',
     plant = mongo.db.planting_records.find_one(
             {'_id': ObjectId(plant_id)}))

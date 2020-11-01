@@ -56,6 +56,7 @@ def index():
                            pagination=pagination,
                            )
 
+#credit to the CI course videos for inspiration for the below search function
 @app.route("/search", methods=["GET", "POST"])
 def search():
     """Gets all records from database,

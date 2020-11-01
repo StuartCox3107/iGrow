@@ -55,16 +55,17 @@ def index():
                            per_page=per_page,
                            pagination=pagination,
                            )
+
+@app.route("/search", methods=["GET", "POST"])
+def search():
     """Gets all records from database,
     matching the searched plant name, and paginates 6 records to
     display on the rendered landing page.
     Args:
         None
     Returns:
-        The rendered index.html with 6 paginated records and the searched plant.
+        The rendered index.html with 6 paginated records and the searched plant(s).
     """
-@app.route("/search", methods=["GET", "POST"])
-def search():
     page, per_page, offset = get_page_args(page_parameter='page',per_page_parameter='per_page')
     per_page = 6
     offset = (page -1) * per_page
@@ -102,7 +103,7 @@ def insert_planting():
 
 @app.route('/read_planting/<plant_id>')
 def read_planting(plant_id):
-    """Checks that the record being searched exists and 
+    """Checks that the record being searched exists and
     renders the details of the chosen  if it does otherwise shows an error page
     Args:
         plant_id: The id of the chosen plant

@@ -32,7 +32,21 @@
         <li class="collection-item">Growing notes: {{plant.grow_notes | capitalize}}</li>
         <li class="collection-item">Harvest date: {{plant.harvest_date}}</li>
         <li class="collection-item">Harvest notes: {{plant.plant_notes | capitalize}}</li>
-        <li class="collection-item">Grow again: {{plant.grow_again}}</li>
+        <li class="collection-item">Grow again?</li>
+        <div class="row">
+      <div class="switch">
+        <label>
+        No
+            {% if plant.grow_again %}
+                <input id="grow_again" name="grow_again" disabled type="checkbox" checked/>
+            {% else %}
+                <input id="grow_again" name="grow_again" disabled type="checkbox"/>
+            {% endif %}
+          <span class="lever light-green"></span>
+          Yes
+        </label>
+      </div>
+    </div>
       </ul>
   </div>
 </div>

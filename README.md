@@ -15,7 +15,7 @@ gardeners to learn from themselves and each other . Initially they will record t
 then as the plant grows during the season, they will record notes on the growing. Finally they will record 
 notes on the harvesting. The idea is that they will be able to have a record that allows them to learn from their and others' past 
 mistakes and problems, and become better gardeners. As results are very dependent on local growing conditions the scope of the site 
-is limited to the UK/ 
+is limited to the UK.
 
 [Link to live site](https://i-grow.herokuapp.com/) opens in same tab, click back if needed
 ---
@@ -157,6 +157,47 @@ All data is stored in MongoDB in one collection
 - **Javascript:** scripts.js tested with [JSLint](https://jslint.com/)
 
 - **Python:** Code tested with pylint: 
+
+Some errors arose;
+
+1. "e" doesn't conform to snake_case style. Acceptable error
+2. Unused argument "e", this argument is only used to render the 404 page when the url is incorrect. acceptable error
+3. Possible unbalanced tuple, arising due to flask pagination, acceptable error
+4. Unused import env
+
+### Manual Testing
+
+**index.html**
+
+The below items are in base.html and apply to all pages
+
+- Tested the logo on the navbar to check that index.html is rendered
+- Tested the logo on the mobile side navber to check that index.html is rendered
+- Tested ```HOME``` button on navbar to check that index.html is rendered
+- Tested burger menu on mobile to check that side menu appears
+- Tested ```HOME``` button on mobile side navbar to check that index.html is rendered
+- Tested ```ADD``` button on navbar to check that the create.html page is rendered
+- Tested ```ADD``` button on mobile side navbar to check the create.html page is rendered
+- Tested the logo on the footer to check that index.html is rendered
+- Tested the ```HOME``` link in the footer to check index.html is rendered
+- Tested the ```ADD``` link in the fotter to check create.html is rendered
+
+Specific to index.html
+
+- Tested the search bar functionality to ensure that the correct search is displayed
+- Tested that there are 6 records displayed in all instances 
+- Tested pagination to checlk that all database records are displayed
+- Tested the ```ADD PLANTING``` button to check that create.html is rendered
+
+**404.html**
+
+- Tested that this page is rendered when a page cannot be found
+
+**create.html**
+
+- 
+
+
 
 ---
 

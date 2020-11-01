@@ -134,7 +134,7 @@ All data is stored in MongoDB in one collection
 - [Coolors](https://coolors.co/) used for colour palette, opens in same tab, press back to return
 - [Material Design](https://material.io/resources/icons/?style=baseline) used for icons, opens in same tab, press back to return
 - [Hover.css](https://ianlunn.github.io/Hover/) used to add button hover effect , opens in same tab, press back to return
-- [Tiny PNG](https://tinypng.com/) used to compress images, opens in same tab, press back to return
+- [Tiny PNG](https://tinypng.com/) used to compress some images used, opens in same tab, press back to return
 - [Heroku](https://dashboard.heroku.com/apps) used to deploy project, opens in same tab, press back to return
 
 ---
@@ -146,11 +146,11 @@ All data is stored in MongoDB in one collection
 - **HTML:** All tested with [W3S HTML Validation Service](https://validator.w3.org/), checked by rendering each page in the browser and right clicking to ensure code being rendered excludes the jinja template language
 1. 404.html: No errors found
 2. base.html: No errors found
-3. create.html:  TO DO STILL
+3. create.html:  No errors found
 4. index.html: No errors found
 5. norecord.html: No errors found
 6. read.html: No errors found
-7. update.html: TO DO STILL
+7. update.html: TO FINISH
 
 - **CSS:** style.css tested with [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/validator), no errors found
 
@@ -283,6 +283,7 @@ Bootstrap and Materialize both used initially until I realised that this causes 
 ## Credits & acknowledgements
 
 - [Simen Daehlin](https://github.com/Eventyret) - [The Padwan Project](https://github.com/Eventyret/Padawan) for boilerplate template
-
+- Mentor Rohit Sharma for his advice and wisdom, particularly in terms of the scope of the project
+- CI coursework videos for the search functionality
 
 ---

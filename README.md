@@ -154,7 +154,7 @@ All data is stored in MongoDB in one collection
 
 - **CSS:** style.css tested with [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/validator), no errors found
 
-- **Javascript:** scripts.js tested with [JSLint](https://jslint.com/)
+- **Javascript:** scripts.js tested with [JSLint](https://jslint.com/), no errors found except for Undeclared '$' coming from the use of JQuery and negated by adding the use of JQuery as a global variable in JSLint 
 
 - **Python:** Code tested with pylint: 
 
@@ -217,8 +217,20 @@ Specific to index.html
 - Tested to check that the correct record is displayed and all fields correctly pre-populated when the ```UPDATE``` button on index.html is clicked
 - Tested to check that any changes made are correctly changed on the database record, the index.html page is rendered and the changed record displays correctly on index.html when the ```UPDATE & RETURN HOME``` button is clicked
 
+### Browser Testing
 
+- Tested all features on Chrome, Firefox and Edge
 
+### Screen size Testing
+
+- Using Chrome dev tools tested all features on;
+
+Moto G4, Galaxy S5, Pixel 2, Pixel 2 XL, iPhone5/SE, iPhone 6/7/8, iPhone 6/7/8 Plus,  iPhone X, iPad, iPad Pro, Surface Duo, Galaxy fold
+
+2 minor issues arising and remain: 
+
+- On the Galaxy Fold and iPhone 5SE (most narrow screens), the search bar text ```Search Plants``` cannot fit on one line, and the holder text covers the input field until clicked on to enter information
+-  On the iPad, the six paginated records on index.html display as four on row one and two on row two
 
 ---
 
@@ -264,11 +276,11 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 
 ---
 
-### Issues
+## Issues
 
-Bootstrap and materialize used initially until I realised that this causes issues
+Bootstrap and Materialize both used initially until I realised that this causes issues in terms of the class names causing clashes. This was realised and I made the decision to switch to using Materialize only
 
-### Credits & acknowledgements
+## Credits & acknowledgements
 
 - [Simen Daehlin](https://github.com/Eventyret) - [The Padwan Project](https://github.com/Eventyret/Padawan) for boilerplate template
 

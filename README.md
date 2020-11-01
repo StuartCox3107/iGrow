@@ -141,10 +141,22 @@ All data is stored in MongoDB in one collection
 
 ## Testing
 
-- HTML
-- CSS
-- Javascript
-- Python: Code tested with pylint: 
+### Code
+
+- **HTML:** All tested with [W3S HTML Validation Service](https://validator.w3.org/), checked by rendering each page in the browser and right clicking to ensure code being rendered excludes the jinja template language
+1. 404.html: No errors found
+2. base.html: No errors found
+3. create.html:  TO DO STILL
+4. index.html: No errors found
+5. norecord.html: No errors found
+6. read.html: No errors found
+7. update.html: TO DO STILL
+
+- **CSS:** style.css tested with [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/validator), no errors found
+
+- **Javascript:** scripts.js tested with [JSLint](https://jslint.com/)
+
+- **Python:** Code tested with pylint: 
 
 ---
 

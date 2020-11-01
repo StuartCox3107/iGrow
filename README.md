@@ -280,6 +280,8 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 
 Bootstrap and Materialize both used initially until I realised that this causes issues in terms of the class names causing clashes. This was realised and I made the decision to switch to using Materialize only
 
+---
+
 ## Credits & acknowledgements
 
 - [Simen Daehlin](https://github.com/Eventyret) - [The Padwan Project](https://github.com/Eventyret/Padawan) for boilerplate template

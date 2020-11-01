@@ -83,7 +83,7 @@ This page will show in the case of a 404 error.
 
 ### Page 6: Record not found page
 
-This case will show if a user trys to read a record that cannot be found. for example by using the back buttons or copy/paste post deletion.
+This case will show if a user tries to read a record that cannot be found. for example by using the back buttons or copy/paste post deletion.
 
 ---
 
@@ -121,7 +121,7 @@ All data is stored in MongoDB in one collection
 
 ## Technologies used
 
-- HTML, CSS & Python languages
+- HTML, CSS, Javascript & Python languages
 - [Google fonts](https://fonts.google.com/) for Baloo Thambo 2 font used through all pages, opens in same tab, press back to return
 - [Favicon.io](https://favicon.io/) to generate favicon,opens in same tab, press back to return
 - [Gitpod](https://www.gitpod.io/) IDE used to code, opens in same tab, press back to return
@@ -180,22 +180,43 @@ The below items are in base.html and apply to all pages
 - Tested ```ADD``` button on mobile side navbar to check the create.html page is rendered
 - Tested the logo on the footer to check that index.html is rendered
 - Tested the ```HOME``` link in the footer to check index.html is rendered
-- Tested the ```ADD``` link in the fotter to check create.html is rendered
+- Tested the ```ADD``` link in the footer to check create.html is rendered
 
 Specific to index.html
 
 - Tested the search bar functionality to ensure that the correct search is displayed
 - Tested that there are 6 records displayed in all instances 
 - Tested pagination to checlk that all database records are displayed
+- Tested the ```DETAILS``` button on each record renders the correct read.html page
+- Tested the ```UPDATE``` button on each record renders the correct update.html page and that the page renders each field as previously completed
+- Tested the ```DELETE``` button removed the record from the database and renders index.html again minus the deleted record
 - Tested the ```ADD PLANTING``` button to check that create.html is rendered
 
 **404.html**
 
-- Tested that this page is rendered when a page cannot be found
+- Tested that this page is rendered when the page cannot be found
 
 **create.html**
 
-- 
+- Tested to check that the materialize 2 x datepickers work as expected
+- Tested all other input fields work as expected
+- Tested the ```ADD & RETURN HOME``` button adds the created record to Mongo DB, returns to index.html and adds the new record as the last record in the paginated list
+
+**norecord.html**
+
+- Tested to check that this page is rendered if a user attempts to copy & paste a URL read.html page of a record that has been deleted
+
+**read.html**
+
+- Tested to check that all fields are populated correctly as per the database
+- Tested ```UPDATE``` button on page to check that update.html is rendered
+- Tested the ```DELETE``` button removed the record from the database and renders index.html again minus the deleted record
+
+**update.html**
+
+- Tested to check that the correct record is displayed and all fields correctly pre-populated when the ```UPDATE``` button on index.html is clicked
+- Tested to check that any changes made are correctly changed on the database record, the index.html page is rendered and the changed record displays correctly on index.html when the ```UPDATE & RETURN HOME``` button is clicked
+
 
 
 

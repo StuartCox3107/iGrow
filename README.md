@@ -150,7 +150,7 @@ All data is stored in MongoDB in one collection
 4. index.html: No errors found
 5. norecord.html: No errors found
 6. read.html: No errors found
-7. update.html: TO FINISH
+7. update.html: **TO FINISH**
 
 - **CSS:** style.css tested with [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/validator), no errors found
 
@@ -278,7 +278,7 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 
 ## Issues
 
-Bootstrap and Materialize both used initially until I realised that this causes issues in terms of the class names causing clashes. This was realised and I made the decision to switch to using Materialize only
+Bootstrap and Materialize both used initially, until I realised that this causes issues in terms of the class names causing clashes. I realised this issue, and I made the decision to switch to using Materialize only
 
 ---
 

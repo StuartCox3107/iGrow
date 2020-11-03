@@ -73,6 +73,9 @@ a {
 }
 
 /*read.html styling*/
+.readswitch {
+    background-color: #fcfaf5 !important}
+
 #readimage {
     padding-top: 30px;
 }

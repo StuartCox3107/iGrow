@@ -99,7 +99,7 @@ Colours are designed to be soft and pastel like, the below colour palette was ge
 <img src="static/images/colourpalette.png" width="500">
 </div>
 
-## Database features
+## Database features/design
 
 All data is stored in MongoDB in one collection
 

@@ -73,8 +73,10 @@ a {
 }
 
 /*read.html styling*/
-.readswitch {
-    background-color: #fcfaf5 !important}
+.readdoc {
+    background-color: white;
+    border-style: solid;
+    border-width: 10px;}
 
 #readimage {
     padding-top: 30px;

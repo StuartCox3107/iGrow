@@ -217,9 +217,14 @@ Specific to index.html
 - Tested to check that the correct record is displayed and all fields correctly pre-populated when the ```UPDATE``` button on index.html is clicked
 - Tested to check that any changes made are correctly changed on the database record, the index.html page is rendered and the changed record displays correctly on index.html when the ```UPDATE & RETURN HOME``` button is clicked
 
-### Browser Testing
+### Further testing
 
-- Tested all features on Chrome, Firefox and Edge
+Tested through;
+
+- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse): 97% overall performance auditing performance and accessibility
+- [Mobile-Friendly test result](https://search.google.com/test/mobile-friendly?id=ZPZuBQ31Pdy2IjWNt9Ac3g): Mobile friendly site result
+- [BrowserStack.com](https://www.browserstack.com/): Tested all features on Chrome, Firefox, Opera, Safari, Edge and Internet Explorer, no issues arose
+
 
 ### Screen size Testing
 

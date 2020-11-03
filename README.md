@@ -115,7 +115,9 @@ All data is stored in MongoDB in one collection
 
 ## Features left to implement
 
-- User profiles: this will allow signed-in users to have personal profiles and edit their own plantings only
+- User profiles: this will allow signed-in users to have personal profiles and edit their own plantings only as well as contributing to the overall community
+
+- Currently the site is designed for UK users only, to be able to select specific countries/communities would also be a desired feature
 
 ---
 
@@ -156,14 +158,14 @@ All data is stored in MongoDB in one collection
 
 - **Javascript:** scripts.js tested with [JSLint](https://jslint.com/), no errors found except for Undeclared '$' coming from the use of JQuery and negated by adding the use of JQuery as a global variable in JSLint 
 
-- **Python:** Code tested with pylint: 
+- **Python:** Code tested with pylint:
 
 Some errors arose;
 
 1. "e" doesn't conform to snake_case style. Acceptable error
 2. Unused argument "e", this argument is only used to render the 404 page when the url is incorrect. acceptable error
 3. Possible unbalanced tuple, arising due to flask pagination, acceptable error
-4. Unused import env
+4. Unused import env **TO FINISH**
 
 ### Manual Testing
 
@@ -219,12 +221,9 @@ Specific to index.html
 
 ### Further testing
 
-Tested through;
-
-- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse): 97% overall performance auditing performance and accessibility
-- [Mobile-Friendly test result](https://search.google.com/test/mobile-friendly?id=ZPZuBQ31Pdy2IjWNt9Ac3g): Mobile friendly site result
-- [BrowserStack.com](https://www.browserstack.com/): Tested all features on Chrome, Firefox, Opera, Safari, Edge and Internet Explorer, no issues arose
-
+- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse): 97% overall performance auditing performance and accessibility, opens in same tab, press back to return
+- [Mobile-Friendly test result](https://search.google.com/test/mobile-friendly?id=ZPZuBQ31Pdy2IjWNt9Ac3g): Mobile friendly site result, opens in same tab, press back to return
+- [BrowserStack.com](https://www.browserstack.com/): Tested all features on latest versions and previous two versions on Chrome, Firefox, Opera, Safari, Edge and Internet Explorer (latest version only), no issues arose, opens in same tab, press back to return
 
 ### Screen size Testing
 
@@ -283,7 +282,7 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 
 ## Issues
 
-Bootstrap and Materialize both used initially, until I realised that this causes issues in terms of the class names causing clashes. I realised this issue, and I made the decision to switch to using Materialize only
+Bootstrap and Materialize both used initially, until I realised that this causes issues in terms of the class names causing clashes. I realised this issue, and made the decision to switch to using Materialize only
 
 ---
 

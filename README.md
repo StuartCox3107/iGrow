@@ -84,7 +84,7 @@ Below this there will be a hero image, and an overview of the purpose of the sit
 
 The footer will have a logo and links to "Home" and "Add"
 
-- [Landing page desktop & tablet](wireframes/11landingdesktoptablet.png) opens in same tab, press back to return
+- [Landing page desktop & tablet](wireframes/p1landingdesktoptablet.png) opens in same tab, press back to return
 - [Landing page mobile](wireframes/p1landingmobile.png) opens in same tab, press back to return
 
 ### Page 2: Update page/update.html
@@ -327,8 +327,8 @@ This can be satisfied by the site owner acting as a moderator both in terms of t
 
 ### Further testing
 
-- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse): 97% overall performance auditing performance and accessibility, opens in same tab, press back to return
-- [Mobile-Friendly test result](https://search.google.com/test/mobile-friendly?id=ZPZuBQ31Pdy2IjWNt9Ac3g): Mobile friendly site result, opens in same tab, press back to return
+- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse): 97% overall performance auditing performance and accessibility, opens in same tab, press back to return. [Link to Lighthouse report screenshot](static/images/lighthousescreen.png)
+- [Mobile-Friendly test result](static/images/mobilefriendlytest.png): [Mobile friendly](https://search.google.com/test/mobile-friendly), both links open in same tab, press back to return
 - [BrowserStack.com](https://www.browserstack.com/): Tested all features on latest versions and previous two versions on Chrome, Firefox, Opera, Safari, Edge and Internet Explorer (latest version only), no issues arose, opens in same tab, press back to return
 
 <a name="screen"></a>
@@ -388,10 +388,11 @@ To deploy this application to Heroku:
 
 Bootstrap and Materialize both used initially, until I realised that this causes issues in terms of the class names causing clashes. I realised this issue, and made the decision to switch to using Materialize only
 
-
+Issues with the Materialize forms corrected by ensuring that the div structure was corrected
 
 ### Open issues
 
+Possible for a user to enter a harvest date being prior to the planting date. The decision to manage this through site moderation was made 
 
 ### [Top of page](#iGrow)
 ---

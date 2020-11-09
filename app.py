@@ -21,12 +21,11 @@ mongo = PyMongo(app)
 def page_not_found(error_handler):
     """Renders page for 404 error handling
     Args:
-        errorHandler: If error triggered due to page not found
+        error_handler: If error triggered due to page not found
     Returns:
         The rendered 404.html page with button to return home.
     """
     return render_template('404.html'), 404
-
 
 @app.route('/')
 @app.route('/index')

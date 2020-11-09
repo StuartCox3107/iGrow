@@ -7,6 +7,11 @@
 # iGrow
 
 ---
+# Links
+
+## [Aim of the site](#aim)
+---
+<a name="aim"></a>
 
 ## Aim of the site
 
@@ -18,8 +23,8 @@ mistakes and problems, and become better gardeners. As results are very dependen
 is limited to the UK.
 
 ## [Link to live site](https://i-grow.herokuapp.com/) opens in same tab, click back if needed
-
 <a name="userstories"></a>
+
 ## User Stories 
 
 "As a new user: I want to understand what the site does and how it can help me. I want to feel that the site
@@ -37,6 +42,7 @@ available on other worldwide sites"
 serve the target market. Anything beyond this should be deleted"
 
 ---
+<a name="plan"></a>
 
 ## Site plan, features & wireframes
 
@@ -44,7 +50,9 @@ serve the target market. Anything beyond this should be deleted"
 
 Click [Here](static/images/siteplan.pdf) for the site plan, opens in same tab, click back if needed
 
-## Features & wireframes
+<a name="features"></a>
+
+## Features & Wireframes
 
 ### Page 1: Landing page/index.html
 
@@ -105,6 +113,7 @@ This page will show in the case of a 404 error, it will have a hero image, error
 This case will show if a user tries to read a record that cannot be found. for example by using the back buttons or copy/paste post deletion. It will have a hero image, error warning and a "Return Home" button 
 
 ---
+<a name="theme"></a>
 
 ## Theme & typography
 
@@ -117,6 +126,7 @@ Colours are designed to be soft and pastel like, the below colour palette was ge
 <div align="center">
 <img src="static/images/colourpalette.png" width="500">
 </div>
+<a name="database"></a>
 
 ## Database features/design
 
@@ -131,6 +141,7 @@ All data is stored in MongoDB in one collection
     - Harvest date, harvest image (an upload of an image of the grown plant), harvest notes and a "Would you grow again?" option
 
 ---
+<a name="left"></a>
 
 ## Features left to implement
 
@@ -141,6 +152,7 @@ All data is stored in MongoDB in one collection
 - Due to the database structure, the search feature requires that the user types in the full plant name in order to find the relevant record
 
 ---
+<a name="tech"></a>
 
 ## Technologies used
 
@@ -161,8 +173,10 @@ All data is stored in MongoDB in one collection
 - [Heroku](https://dashboard.heroku.com/apps) used to deploy project, opens in same tab, press back to return
 
 ---
+<a name="testing"></a>
 
 ## Testing
+<a name="code"></a>
 
 ### Code
 
@@ -187,12 +201,13 @@ Some errors arose and remain;
 1. Unused argument "error_handler", this argument is only used to render the 404 page when the url is incorrect, acceptable error
 2. Possible unbalanced tuple, arising due to flask pagination, acceptable error
 3. Unused import env, arising due to the storing of environment variables in env.py, acceptable error
+<a name="manual"></a>
 
 ### Manual Testing
 
 **index.html**
 
-The below items are in base.html and apply to all pages. Appearance cross referenced against site features section above
+The below items are in base.html and apply to all pages. Appearance cross referenced against [site features](#features) section above
 
 - Tested the logo on the navbar to check that index.html is rendered
 - Tested the logo on the mobile side navber to check that index.html is rendered
@@ -239,6 +254,7 @@ Specific to index.html
 
 - Tested to check that the correct record is displayed and all fields correctly pre-populated when the `UPDATE` button on index.html is clicked
 - Tested to check that any changes made are correctly changed on the database record, the index.html page is rendered and the changed record displays correctly on index.html when the `UPDATE & RETURN HOME` button is clicked
+<a name="usertesting"></a>
 
 ### User story testing
 
@@ -267,12 +283,14 @@ The site specifies that this is a UK based one, users should be aware of this, s
 serve the target market. Anything beyond this should be deleted"
 
 This can be satisfied by the site owner acting as a moderator both in terms of the quality of records and also as a check that records are specific to the UK
+<a name="further"></a>
 
 ### Further testing
 
 - [Google Lighthouse](https://developers.google.com/web/tools/lighthouse): 97% overall performance auditing performance and accessibility, opens in same tab, press back to return
 - [Mobile-Friendly test result](https://search.google.com/test/mobile-friendly?id=ZPZuBQ31Pdy2IjWNt9Ac3g): Mobile friendly site result, opens in same tab, press back to return
 - [BrowserStack.com](https://www.browserstack.com/): Tested all features on latest versions and previous two versions on Chrome, Firefox, Opera, Safari, Edge and Internet Explorer (latest version only), no issues arose, opens in same tab, press back to return
+<a name="screen"></a>
 
 ### Screen size Testing
 
@@ -286,6 +304,7 @@ Moto G4, Galaxy S5, Pixel 2, Pixel 2 XL, iPhone5/SE, iPhone 6/7/8, iPhone 6/7/8 
 - On the iPad, the six paginated records on index.html display as four on row one and two on row two
 
 ---
+<a name="deployment"></a>
 
 ## Deployment
 
@@ -318,12 +337,14 @@ To deploy this application to Heroku:
 4. Click `Open Browser` and the local app will open in a new window
 
 ---
+<a name="issues"></a>
 
 ## Issues
 
 Bootstrap and Materialize both used initially, until I realised that this causes issues in terms of the class names causing clashes. I realised this issue, and made the decision to switch to using Materialize only
 
 ---
+<a name="credits"></a>
 
 ## Credits & acknowledgements
 

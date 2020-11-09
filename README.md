@@ -156,16 +156,15 @@ All data is stored in MongoDB in one collection
 
 - **CSS:** style.css tested with [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/validator), no errors found
 
-- **Javascript:** scripts.js tested with [JSLint](https://jslint.com/), no errors found except for Undeclared '$' coming from the use of JQuery and negated by adding the use of JQuery as a global variable in JSLint 
+- **Javascript:** scripts.js tested with [JSLint](https://jslint.com/), no errors found except for Undeclared '$', coming from the use of JQuery and negated by adding the use of JQuery as a global variable in JSLint 
 
 - **Python:** Code tested with pylint:
 
-Some errors arose;
+Some errors arose and remain;
 
-1. "e" doesn't conform to snake_case style. Acceptable error
-2. Unused argument "e", this argument is only used to render the 404 page when the url is incorrect. acceptable error
-3. Possible unbalanced tuple, arising due to flask pagination, acceptable error
-4. Unused import env **TO FINISH**
+1. Unused argument "error_handler", this argument is only used to render the 404 page when the url is incorrect, acceptable error
+2. Possible unbalanced tuple, arising due to flask pagination, acceptable error
+3. Unused import env, arising due to the storing of environment variables in env.py, acceptable error
 
 ### Manual Testing
 
@@ -240,7 +239,7 @@ Moto G4, Galaxy S5, Pixel 2, Pixel 2 XL, iPhone5/SE, iPhone 6/7/8, iPhone 6/7/8 
 
 ## Deployment
 
-To deploy this page to Heroku:
+To deploy this application to Heroku:
 
 1. Create a ```requirements.txt``` file by using the terminal command ```pip freeze > requirements.txt```.
 2. Create a ```Procfile``` by using the terminal command ```echo web: python app.py > Procfile```.
@@ -261,22 +260,12 @@ In the Heroku dashboard, click "Settings" > "Reveal Config Vars".
 8. In the Heroku dashboard. click "Deploy".
 9. In the "Manual Deployment" section of this page, make sure the master branch is selected then click "Deploy Branch". 
 
-## How to run this project locally
+## How to run this project locally from Gitpod
 
-To clone this project from GitHub:
-
-1. Under the repository name, click "Code".
-2. In the Clone with HTTPs section, copy the clone URL for the repository. 
-3. In your local IDE open Git Bash.
-4. Change the current working directory to the location where you want the cloned directory to be made.
-5. Type ```git clone```, and then paste the URL you copied in Step 2.
-```console
-git clone https://github.com/StuartCox3107/iGrow
-```
-6. Press Enter. Your local clone will be created.
-7. Go to the cloned folder and run index.html
-
-Further reading and troubleshooting on cloning a repository from GitHub [here](https://help.github.com/en/articles/cloning-a-repository).
+1. Open a new terminal
+2. Type ```python3 app.py```
+3. This will open a new port (8080)
+4. Click ```Open Browser``` and the local app will open in a new window
 
 ---
 
@@ -290,6 +279,7 @@ Bootstrap and Materialize both used initially, until I realised that this causes
 
 - [Simen Daehlin](https://github.com/Eventyret) - [The Padwan Project](https://github.com/Eventyret/Padawan) for boilerplate template
 - Mentor Rohit Sharma for his advice and wisdom, particularly in terms of the scope of the project
+- Richard Wells_lead for the README.md cloning from Github section
 - CI coursework videos for the search functionality
 
 ---

@@ -2,7 +2,7 @@ $(document).ready(function () {
   $(".collapsible").collapsible();
   $(".sidenav").sidenav();
   $(".datepicker").datepicker({
-        format: "dd, mmmm yyyy",
+        format: "dd, mmm yyyy",
         yearRange: 10,
         showClearBtn: true,
         i18n: {

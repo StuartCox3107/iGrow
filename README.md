@@ -207,7 +207,7 @@ All data is stored in MongoDB in one collection
 
 ### Code
 
-- **HTML:** All tested with [W3S HTML Validation Service](https://validator.w3.org/), checked by rendering each page in the browser and right clicking to ensure code being rendered excludes the jinja template language
+- **HTML:** All tested with [W3S HTML Validation Service](https://validator.w3.org/), checked by rendering each page in the browser and right clicking and viewing ```Page source``` to ensure code being rendered excludes the jinja template language
 
 1. 404.html: No errors found
 2. base.html: No errors found
@@ -215,7 +215,7 @@ All data is stored in MongoDB in one collection
 4. index.html: No errors found
 5. norecord.html: No errors found
 6. read.html: No errors found
-7. update.html: **TO FINISH**
+7. update.html: An error comes from the fact that the templates gives a value from the existing database record field, an acceptable error as this aids user use
 
 - **CSS:** style.css tested with [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/validator), no errors found
 
@@ -381,7 +381,7 @@ To deploy this application to Heroku:
 ---
 <a name="issues"></a>
 
-## Issues
+## Issues & bugs
 
 ### Closed issues
 
@@ -405,5 +405,5 @@ Possible for a user to enter a harvest date being prior to the planting date. Th
 - CI coursework videos for the search functionality
 - [w3schools](https://www.w3schools.com/) was used extensively to research and assist with many challenges 
 
-### [Top](#iGrow)
+### [Top of page](#iGrow)
 ---

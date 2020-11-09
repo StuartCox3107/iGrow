@@ -16,7 +16,6 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 
 mongo = PyMongo(app)
 
-
 @app.errorhandler(404)
 def page_not_found(error_handler):
     """Renders page for 404 error handling
@@ -53,7 +52,6 @@ def index():
 
 # credit to the CI course videos for inspiration for the below search function
 
-
 @app.route("/search", methods=["GET", "POST"])
 def search():
     """Gets all records from database,
@@ -86,7 +84,6 @@ def add_planting():
     """
     return render_template('create.html')
 
-
 @app.route('/insert_planting', methods=['POST'])
 def insert_planting():
     """Adds new record input to database
@@ -95,7 +92,6 @@ def insert_planting():
     planting_records = mongo.db.planting_records
     planting_records.insert_one(request.form.to_dict())
     return redirect(url_for('index'))
-
 
 @app.route('/read_planting/<plant_id>')
 def read_planting(plant_id):
@@ -112,7 +108,6 @@ def read_planting(plant_id):
                            plant=mongo.db.planting_records.find_one(
                                {'_id': ObjectId(plant_id)}))
 
-
 @app.route('/edit_planting/<plant_id>')
 def edit_planting(plant_id):
     """Renders the edit page with the chosen plant details populated
@@ -123,7 +118,6 @@ def edit_planting(plant_id):
     """
     the_plant = mongo.db.planting_records.find_one({"_id": ObjectId(plant_id)})
     return render_template('update.html', plant=the_plant)
-
 
 @app.route('/update_planting/<plant_id>', methods=['POST'])
 def update_planting(plant_id):
@@ -146,7 +140,6 @@ def update_planting(plant_id):
     })
     return redirect(url_for('index'))
 
-
 @app.route('/delete_planting/<plant_id>')
 def delete_planting(plant_id):
     """Deletes the chosen record from the database
@@ -156,7 +149,6 @@ def delete_planting(plant_id):
     """
     mongo.db.planting_records.remove({'_id': ObjectId(plant_id)})
     return redirect(url_for('index'))
-
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

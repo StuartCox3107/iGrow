@@ -84,8 +84,8 @@ Below this there will be a hero image, and an overview of the purpose of the sit
 
 The footer will have a logo and links to "Home" and "Add"
 
-- [Landing page desktop & tablet](wireframes/p1landingpagedesktoptablet.png) opens in same tab, press back to return
-- [Landing page mobile](wireframes/p1landingpagemobile.png) opens in same tab, press back to return
+- [Landing page desktop & tablet](wireframes/p1landingdesktoptablet.png) opens in same tab, press back to return
+- [Landing page mobile](wireframes/p1landingmobile.png) opens in same tab, press back to return
 
 ### Page 2: Update page/update.html
 
@@ -98,7 +98,7 @@ The standard format of hero image and page overview will be present as all pages
 Below this will be a form giving the ability to the user to update all possible datbase fields. Any fields previously completed will be pre-populated. Under this there will be an "Update & return home" button
 
 - [Update page desktop & tablet](wireframes/P2updatedesktoptablet.png) opens in same tab, press back to return
-- [Update page mobile](wireframes/P2updatemobile.png) opens in same tab, press back to return
+- [Update page mobile](wireframes/p2updatemobile.png) opens in same tab, press back to return
 
 ### Page 3: Read page/read.html
 

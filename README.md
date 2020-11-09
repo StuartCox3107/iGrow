@@ -10,6 +10,22 @@
 # Links
 
 ## [Aim of the site](#aim)
+## [User stories](#userstories)
+## [Site plan](#plan) and [Features/Wireframes](features)
+## [Theme & typography](#theme)
+## [Database features & design](#database)
+## [Features left to implement](#left)
+## [Technologies used](#tech)
+## [Testing](#testing)
+- [Code testing](#code)
+- [Manual testing](#manual)
+- [User story testing](#usertesting)
+- [Further testing](#further)
+- [Screen-size testing](#screen)
+## [Deployment](#deployment)
+## [Issues & bugs](#issues)
+## [Credits & acknowledgements](#credits)
+
 ---
 <a name="aim"></a>
 

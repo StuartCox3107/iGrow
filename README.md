@@ -40,7 +40,7 @@ is limited to the UK.
 
 ## [Link to live site](https://i-grow.herokuapp.com/) opens in same tab, click back if needed
 
-### [Top](#iGrow)
+### [Top of page](#iGrow)
 
 <a name="userstories"></a>
 
@@ -60,7 +60,7 @@ available on other worldwide sites"
 "As the site owner: I want to ensure that the site is focussed on UK plant growings to best
 serve the target market. Anything beyond this should be deleted"
 
-### [Top](#iGrow)
+### [Top of page](#iGrow)
 ---
 ## Site plan, features & wireframes
 
@@ -132,7 +132,7 @@ This page will show in the case of a 404 error, it will have a hero image, error
 
 This case will show if a user tries to read a record that cannot be found. for example by using the back buttons or copy/paste post deletion. It will have a hero image, error warning and a "Return Home" button 
 
-### [Top](#iGrow)
+### [Top of page](#iGrow)
 ---
 <a name="theme"></a>
 
@@ -148,7 +148,7 @@ Colours are designed to be soft and pastel like, the below colour palette was ge
 <img src="static/images/colourpalette.png" width="500">
 </div>
 
-### [Top](#iGrow)
+### [Top of page](#iGrow)
 
 <a name="database"></a>
 
@@ -164,7 +164,7 @@ All data is stored in MongoDB in one collection
   - Harvest time:
     - Harvest date, harvest image (an upload of an image of the grown plant), harvest notes and a "Would you grow again?" option
 
-### [Top](#iGrow)
+### [Top of page](#iGrow)
 ---
 <a name="left"></a>
 
@@ -176,7 +176,7 @@ All data is stored in MongoDB in one collection
 
 - Due to the database structure, the search feature requires that the user types in the full plant name in order to find the relevant record
 
-### [Top](#iGrow)
+### [Top of page](#iGrow)
 ---
 <a name="tech"></a>
 
@@ -198,7 +198,7 @@ All data is stored in MongoDB in one collection
 - [Tiny PNG](https://tinypng.com/) used to compress some images used, opens in same tab, press back to return
 - [Heroku](https://dashboard.heroku.com/apps) used to deploy project, opens in same tab, press back to return
 
-### [Top](#iGrow)
+### [Top of page](#iGrow)
 ---
 <a name="testingsection"></a>
 
@@ -260,9 +260,13 @@ Specific to index.html
 
 **404.html**
 
+Appearance cross referenced against [site features](#features) section above
+
 - Tested that this page is rendered when the page cannot be found
 
 **create.html**
+
+Appearance cross referenced against [site features](#features) section above
 
 - Tested to check that the materialize 2 x datepickers work as expected
 - Tested all other input fields work as expected
@@ -270,15 +274,21 @@ Specific to index.html
 
 **norecord.html**
 
+Appearance cross referenced against [site features](#features) section above
+
 - Tested to check that this page is rendered if a user attempts to copy & paste a URL read.html page of a record that has been deleted
 
 **read.html**
+
+Appearance cross referenced against [site features](#features) section above
 
 - Tested to check that all fields are populated correctly as per the database
 - Tested `UPDATE` button on page to check that update.html is rendered
 - Tested the `DELETE` button removed the record from the database and renders index.html again minus the deleted record
 
 **update.html**
+
+Appearance cross referenced against [site features](#features) section above
 
 - Tested to check that the correct record is displayed and all fields correctly pre-populated when the `UPDATE` button on index.html is clicked
 - Tested to check that any changes made are correctly changed on the database record, the index.html page is rendered and the changed record displays correctly on index.html when the `UPDATE & RETURN HOME` button is clicked
@@ -334,7 +344,7 @@ Moto G4, Galaxy S5, Pixel 2, Pixel 2 XL, iPhone5/SE, iPhone 6/7/8, iPhone 6/7/8 
 - On the Galaxy Fold and iPhone 5SE (most narrow screens), the search bar text `Search Plants` cannot fit on one line, and the holder text covers the input field until clicked on to enter information
 - On the iPad, the six paginated records on index.html display as four on row one and two on row two
 
-### [Top](#iGrow)
+### [Top of page](#iGrow)
 ---
 <a name="deploy"></a>
 
@@ -368,15 +378,22 @@ To deploy this application to Heroku:
 3. This will open a new port (8080)
 4. Click `Open Browser` and the local app will open in a new window
 
-### [Top](#iGrow)
+### [Top of page](#iGrow)
 ---
 <a name="issues"></a>
 
 ## Issues
 
+### Closed issues
+
 Bootstrap and Materialize both used initially, until I realised that this causes issues in terms of the class names causing clashes. I realised this issue, and made the decision to switch to using Materialize only
 
-### [Top](#iGrow)
+
+
+### Open issues
+
+
+### [Top of page](#iGrow)
 ---
 <a name="credits"></a>
 

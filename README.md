@@ -84,8 +84,8 @@ Below this there will be a hero image, and an overview of the purpose of the sit
 
 The footer will have a logo and links to "Home" and "Add"
 
-- [Landing page desktop & tablet](wireframes/p1landingdesktoptablet.png) opens in same tab, press back to return
-- [Landing page mobile](wireframes/p1landingmobile.png) opens in same tab, press back to return
+- [Landing page desktop & tablet](wireframes/p1landingpagedesktoptablet.png) opens in same tab, press back to return
+- [Landing page mobile](wireframes/p1landingpagemobile.png) opens in same tab, press back to return
 
 ### Page 2: Update page/update.html
 
@@ -98,7 +98,7 @@ The standard format of hero image and page overview will be present as all pages
 Below this will be a form giving the ability to the user to update all possible datbase fields. Any fields previously completed will be pre-populated. Under this there will be an "Update & return home" button
 
 - [Update page desktop & tablet](wireframes/P2updatedesktoptablet.png) opens in same tab, press back to return
-- [Update page mobile](wireframes/p2updatemobile.png) opens in same tab, press back to return
+- [Update page mobile](wireframes/P2updatemobile.png) opens in same tab, press back to return
 
 ### Page 3: Read page/read.html
 
@@ -186,11 +186,11 @@ All data is stored in MongoDB in one collection
 - [Google fonts](https://fonts.google.com/) for Baloo Thambo 2 font used through all pages, opens in same tab, press back to return
 - [Favicon.io](https://favicon.io/) to generate favicon,opens in same tab, press back to return
 - [Gitpod](https://www.gitpod.io/) IDE used to code, opens in same tab, press back to return
-- [GitHub](https://github.com/) To host the repositories for this project and the live website preview, opens in same tab, press back to return
+- [GitHub](https://github.com/) To host the repositories for this project, opens in same tab, press back to return
 - [Balsamiq](https://balsamiq.com/) used to design wireframes, opens in same tab, press back to return
 - [Undraw](https://undraw.co/illustrations) used for cartoon images on site, opens in same tab, press back to return
 - [Materialize](https://materializecss.com/) framework used for site layout & design
-- [Flask](https://flask.palletsprojects.com/en/1.1.x/) as a framework, opens in same tab, press back to return
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/) as a micro framework, opens in same tab, press back to return
 - [MongoDB](https://www.mongodb.com/) as the database store, opens in same tab, press back to return
 - [Coolors](https://coolors.co/) used for colour palette, opens in same tab, press back to return
 - [Material Design](https://material.io/resources/icons/?style=baseline) used for icons, opens in same tab, press back to return
@@ -339,9 +339,8 @@ This can be satisfied by the site owner acting as a moderator both in terms of t
 
 Moto G4, Galaxy S5, Pixel 2, Pixel 2 XL, iPhone5/SE, iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, iPad, iPad Pro, Surface Duo, Galaxy fold
 
-2 minor issues arising and remain:
+1 minor issue arising and remain:
 
-- On the Galaxy Fold and iPhone 5SE (most narrow screens), the search bar text `Search Plants` cannot fit on one line, and the holder text covers the input field until clicked on to enter information
 - On the iPad, the six paginated records on index.html display as four on row one and two on row two
 
 ### [Top of page](#iGrow)
@@ -404,6 +403,7 @@ Possible for a user to enter a harvest date being prior to the planting date. Th
 - Mentor Rohit Sharma for his advice and wisdom, particularly in terms of the scope of the project
 - Richard Wells_lead for the README.md cloning from Github section
 - CI coursework videos for the search functionality
+- [w3schools](https://www.w3schools.com/) was used extensively to research and assist with many challenges 
 
 ### [Top](#iGrow)
 ---

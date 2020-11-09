@@ -19,7 +19,8 @@ is limited to the UK.
 
 ## [Link to live site](https://i-grow.herokuapp.com/) opens in same tab, click back if needed
 
-## User stories
+## User Stories 
+<a name="userstories"></a>
 
 "As a new user: I want to understand what the site does and how it can help me. I want to feel that the site
 will be easy and intuitive, and that it will serve a purpose to me"
@@ -51,9 +52,9 @@ This page will give an overview of what the site purpose is to the user. It will
 
 It will have a navbar with a logo as well as "Home" and "Add" buttons (through a burger menu on mobile & tablet)
 
-Below this there will be a hero image, and an overview of the purpose of the site. Under this, there will be three cards giving further details of functionality. Below this, a search-bar then six (paginated) records with the pagination button below, as well as an "Add Planting" button
+Below this there will be a hero image, and an overview of the purpose of the site. Under this, there will be three cards giving further details of functionality. Below this, a search-bar, then six (paginated) records with the pagination button below, as well as an "Add Planting" button
 
-The footer will a logo and links to "Home" and "Add"
+The footer will have a logo and links to "Home" and "Add"
 
 - [Landing page desktop & tablet](wireframes/11landingdesktoptablet.png) opens in same tab, press back to return
 - [Landing page mobile](wireframes/p1landingmobile.png) opens in same tab, press back to return
@@ -191,7 +192,7 @@ Some errors arose and remain;
 
 **index.html**
 
-The below items are in base.html and apply to all pages
+The below items are in base.html and apply to all pages. Appearance cross referenced against site features section above
 
 - Tested the logo on the navbar to check that index.html is rendered
 - Tested the logo on the mobile side navber to check that index.html is rendered
@@ -240,6 +241,8 @@ Specific to index.html
 - Tested to check that any changes made are correctly changed on the database record, the index.html page is rendered and the changed record displays correctly on index.html when the `UPDATE & RETURN HOME` button is clicked
 
 ### User story testing
+
+Tested against <a name="userstories">User Stories</a>
 
 "As a new user: I want to understand what the site does and how it can help me. I want to feel that the site
 will be easy and intuitive, and that it will serve a purpose to me"

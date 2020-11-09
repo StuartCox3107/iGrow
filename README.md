@@ -19,8 +19,8 @@ is limited to the UK.
 
 ## [Link to live site](https://i-grow.herokuapp.com/) opens in same tab, click back if needed
 
-## User Stories 
 <a name="userstories"></a>
+## User Stories 
 
 "As a new user: I want to understand what the site does and how it can help me. I want to feel that the site
 will be easy and intuitive, and that it will serve a purpose to me"
@@ -242,7 +242,7 @@ Specific to index.html
 
 ### User story testing
 
-Tested against <a name="userstories">User Stories</a>
+Tested against [User Stories](#userstories)
 
 "As a new user: I want to understand what the site does and how it can help me. I want to feel that the site
 will be easy and intuitive, and that it will serve a purpose to me"

@@ -1,5 +1,4 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 <!--main image & overview-->
 <div class="container">
   <div class="row">
@@ -14,119 +13,137 @@
       <h2>Grow & Learn</h2>
       <br />
       <p>
-        Use this page to add to your records as you go through 
-        the lifecycle of your plantings.
+        Use this page to add to your records as you go through the lifecycle of
+        your plantings.
       </p>
     </div>
   </div>
 </div>
 
 <div class="container">
-<div class="row">
-  <form action="{{ url_for('update_planting', plant_id=plant._id) }}" method="POST" class="col s12">
-    <!--datepicker for date planted field-->
-    <div class="row">
-      <div class="input-field col s12">
-        <i class="material-icons prefix">today</i>
-        <input
-          id="date_planted"
-          name="date_planted"
-          type="text"
-          class="datepicker"
-          value="{{plant.date_planted}}"
-        />
-        <label for="date_planted">Date planted</label>
+  <div class="row">
+    <form
+      action="{{ url_for('update_planting', plant_id=plant._id) }}"
+      method="POST"
+      class="col s12"
+    >
+      <!--datepicker for date planted field-->
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">today</i>
+          <input
+            id="date_planted"
+            name="date_planted"
+            type="text"
+            class="datepicker"
+            value="{{plant.date_planted}}"
+          />
+          <label for="date_planted">Date planted</label>
+        </div>
       </div>
-    </div>
 
-    <!--text field for plant name-->
-    <div class="row">
-      <div class="input-field col s12">
-        <i class="material-icons prefix">create</i>
-        <input id="plant_name" name="plant_name" type="text" value="{{plant.plant_name}}"/>
-        <label for="plant_name">Plant name</label>
+      <!--text field for plant name-->
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">create</i>
+          <input
+            id="plant_name"
+            name="plant_name"
+            type="text"
+            value="{{plant.plant_name}}"
+          />
+          <label for="plant_name">Plant name</label>
+        </div>
       </div>
-    </div>
 
-    <!--text field for planting notes-->
-    <div class="row">
-      <div class="input-field col s12">
-        <i class="material-icons prefix">create</i>
-        <textarea
-          id="plant_notes"
-          name="plant_notes"
-          class="materialize-textarea"
-          value="{{plant.plant_notes}}"
-        >{{plant.plant_notes}}</textarea>
-        <label for="plant_notes">Planting notes</label>
+      <!--text field for planting notes-->
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">create</i>
+          <textarea
+            id="plant_notes"
+            name="plant_notes"
+            class="materialize-textarea"
+            value="{{plant.plant_notes}}"
+          >
+{{plant.plant_notes}}</textarea
+          >
+          <label for="plant_notes">Planting notes</label>
+        </div>
       </div>
-    </div>
 
-    <!--text field for growing notes-->
-    <div class="row">
-      <div class="input-field col s12">
-        <i class="material-icons prefix">create</i>
-        <textarea
-          name="grow_notes"
-          id="grow_notes"
-          class="materialize-textarea"
-          value="{{plant.grow_notes}}"
-        >{{plant.grow_notes}}</textarea>
-        <label for="grow_notes">Growing notes</label>
+      <!--text field for growing notes-->
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">create</i>
+          <textarea
+            name="grow_notes"
+            id="grow_notes"
+            class="materialize-textarea"
+            value="{{plant.grow_notes}}"
+          >
+{{plant.grow_notes}}</textarea
+          >
+          <label for="grow_notes">Growing notes</label>
+        </div>
       </div>
-    </div>
 
-    <!--datepicker for date harvested field-->
-    <div class="row">
-      <div class="input-field col s12">
-        <i class="material-icons prefix">today</i>
-        <input
-          id="harvest_date"
-          name="harvest_date"
-          type="text"
-          class="datepicker"
-          value="{{plant.harvest_date}}"
-        />
-        <label for="harvest_date">Date harvested</label>
+      <!--datepicker for date harvested field-->
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">today</i>
+          <input
+            id="harvest_date"
+            name="harvest_date"
+            type="text"
+            class="datepicker"
+            value="{{plant.harvest_date}}"
+          />
+          <label for="harvest_date">Date harvested</label>
+        </div>
       </div>
-    </div>
 
-    <!--text field for harvest notes-->
-    <div class="row">
-      <div class="input-field col s12">
-        <i class="material-icons prefix">create</i>
-        <textarea
-          name="harvest_notes"
-          id="harvest_notes"
-          class="materialize-textarea"
-          value="{{plant.harvest_notes}}"
-        >{{plant.harvest_notes}}</textarea>
-        <label for="harvest_notes">Harvest notes</label>
+      <!--text field for harvest notes-->
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">create</i>
+          <textarea
+            name="harvest_notes"
+            id="harvest_notes"
+            class="materialize-textarea"
+            value="{{plant.harvest_notes}}"
+          >
+{{plant.harvest_notes}}</textarea
+          >
+          <label for="harvest_notes">Harvest notes</label>
+        </div>
       </div>
-    </div>
 
-
-    <!--would grow again? field-->
-    <div class="row">
-      <div class="switch">
-        <label>
+      <!--would grow again? field-->
+      <div class="row">
+        <div class="switch">
+          <label>
             {% if plant.grow_again %}
-                <input id="grow_again" name="grow_again" type="checkbox" checked/>
+            <input id="grow_again" name="grow_again" type="checkbox" checked />
             {% else %}
-                <input id="grow_again" name="grow_again" type="checkbox"/>
+            <input id="grow_again" name="grow_again" type="checkbox" />
             {% endif %}
-          <span class="lever light-green"></span>
-          Would you grow again?
-        </label>
+            <span class="lever light-green"></span>
+            Would you grow again?
+          </label>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <button class="btn waves-effect waves-light light-green hvr-float-shadow" type="submit" name="action">
-        Update & return home
-        <i class="material-icons right">home</i>
-      </button>
-    </div>
-  </form>
-</div>
+      <div class="row">
+        <button
+          class="btn waves-effect waves-light light-green hvr-float-shadow"
+          type="submit"
+          name="action"
+        >
+          Update & return home
+          <i class="material-icons right">home</i>
+        </button>
+      </div>
+    </form>
+  </div>
 </div>
 {% endblock %}

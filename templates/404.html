@@ -1,5 +1,4 @@
-{% extends "base.html" %}
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <!--shows error page in case of a 404 error-->
 <div class="container">
   <div class="row">
@@ -21,6 +20,12 @@
   </div>
 </div>
 
-  <p><a class="waves-effect waves-light btn btn-block hvr-float-shadow white-text" href="{{ url_for('index') }}"><i class="material-icons left">home</i> Go back home</a></p>
-  
+<p>
+  <a
+    class="waves-effect waves-light btn btn-block hvr-float-shadow white-text"
+    href="{{ url_for('index') }}"
+    ><i class="material-icons left">home</i> Go back home</a
+  >
+</p>
+
 {% endblock %}

@@ -7,24 +7,24 @@
 # iGrow
 
 ---
-# Links
+## Links
 
-## [Aim of the site](#aim)
-## [User stories](#userstories)
-## [Site plan](#plan) and [Features/Wireframes](features)
-## [Theme & typography](#theme)
-## [Database features & design](#database)
-## [Features left to implement](#left)
-## [Technologies used](#tech)
-## [Testing](#testing)
+### [Aim of the site](#aim)
+### [User stories](#userstories)
+### [Site plan](#plan) and [Features/Wireframes](#features)
+### [Theme & typography](#theme)
+### [Database features & design](#database)
+### [Features left to implement](#left)
+### [Technologies used](#tech)
+### [Testing](#testingsection)
 - [Code testing](#code)
 - [Manual testing](#manual)
 - [User story testing](#usertesting)
 - [Further testing](#further)
 - [Screen-size testing](#screen)
-## [Deployment](#deployment)
-## [Issues & bugs](#issues)
-## [Credits & acknowledgements](#credits)
+### [Deployment](#deploy)
+### [Issues & bugs](#issues)
+### [Credits & acknowledgements](#credits)
 
 ---
 <a name="aim"></a>
@@ -189,7 +189,7 @@ All data is stored in MongoDB in one collection
 - [Heroku](https://dashboard.heroku.com/apps) used to deploy project, opens in same tab, press back to return
 
 ---
-<a name="testing"></a>
+<a name="testingsection"></a>
 
 ## Testing
 <a name="code"></a>
@@ -320,7 +320,7 @@ Moto G4, Galaxy S5, Pixel 2, Pixel 2 XL, iPhone5/SE, iPhone 6/7/8, iPhone 6/7/8 
 - On the iPad, the six paginated records on index.html display as four on row one and two on row two
 
 ---
-<a name="deployment"></a>
+<a name="deploy"></a>
 
 ## Deployment
 

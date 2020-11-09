@@ -1,3 +1,5 @@
+<a name="top"></a>
+
 <div align="center">
 <img src="static/images/readmeimage.png" width="800">
 </div>
@@ -39,6 +41,9 @@ mistakes and problems, and become better gardeners. As results are very dependen
 is limited to the UK.
 
 ## [Link to live site](https://i-grow.herokuapp.com/) opens in same tab, click back if needed
+
+### [Top](#top)
+
 <a name="userstories"></a>
 
 ## User Stories 
@@ -57,10 +62,11 @@ available on other worldwide sites"
 "As the site owner: I want to ensure that the site is focussed on UK plant growings to best
 serve the target market. Anything beyond this should be deleted"
 
+### [Top](#top)
 ---
-<a name="plan"></a>
-
 ## Site plan, features & wireframes
+
+<a name="plan"></a>
 
 ### Site plan
 
@@ -128,6 +134,7 @@ This page will show in the case of a 404 error, it will have a hero image, error
 
 This case will show if a user tries to read a record that cannot be found. for example by using the back buttons or copy/paste post deletion. It will have a hero image, error warning and a "Return Home" button 
 
+### [Top](#top)
 ---
 <a name="theme"></a>
 
@@ -142,6 +149,9 @@ Colours are designed to be soft and pastel like, the below colour palette was ge
 <div align="center">
 <img src="static/images/colourpalette.png" width="500">
 </div>
+
+### [Top](#top)
+
 <a name="database"></a>
 
 ## Database features/design
@@ -156,6 +166,7 @@ All data is stored in MongoDB in one collection
   - Harvest time:
     - Harvest date, harvest image (an upload of an image of the grown plant), harvest notes and a "Would you grow again?" option
 
+### [Top](#top)
 ---
 <a name="left"></a>
 
@@ -167,6 +178,7 @@ All data is stored in MongoDB in one collection
 
 - Due to the database structure, the search feature requires that the user types in the full plant name in order to find the relevant record
 
+### [Top](#top)
 ---
 <a name="tech"></a>
 
@@ -188,6 +200,7 @@ All data is stored in MongoDB in one collection
 - [Tiny PNG](https://tinypng.com/) used to compress some images used, opens in same tab, press back to return
 - [Heroku](https://dashboard.heroku.com/apps) used to deploy project, opens in same tab, press back to return
 
+### [Top](#top)
 ---
 <a name="testingsection"></a>
 
@@ -217,6 +230,7 @@ Some errors arose and remain;
 1. Unused argument "error_handler", this argument is only used to render the 404 page when the url is incorrect, acceptable error
 2. Possible unbalanced tuple, arising due to flask pagination, acceptable error
 3. Unused import env, arising due to the storing of environment variables in env.py, acceptable error
+
 <a name="manual"></a>
 
 ### Manual Testing
@@ -270,6 +284,7 @@ Specific to index.html
 
 - Tested to check that the correct record is displayed and all fields correctly pre-populated when the `UPDATE` button on index.html is clicked
 - Tested to check that any changes made are correctly changed on the database record, the index.html page is rendered and the changed record displays correctly on index.html when the `UPDATE & RETURN HOME` button is clicked
+
 <a name="usertesting"></a>
 
 ### User story testing
@@ -299,6 +314,7 @@ The site specifies that this is a UK based one, users should be aware of this, s
 serve the target market. Anything beyond this should be deleted"
 
 This can be satisfied by the site owner acting as a moderator both in terms of the quality of records and also as a check that records are specific to the UK
+
 <a name="further"></a>
 
 ### Further testing
@@ -306,6 +322,7 @@ This can be satisfied by the site owner acting as a moderator both in terms of t
 - [Google Lighthouse](https://developers.google.com/web/tools/lighthouse): 97% overall performance auditing performance and accessibility, opens in same tab, press back to return
 - [Mobile-Friendly test result](https://search.google.com/test/mobile-friendly?id=ZPZuBQ31Pdy2IjWNt9Ac3g): Mobile friendly site result, opens in same tab, press back to return
 - [BrowserStack.com](https://www.browserstack.com/): Tested all features on latest versions and previous two versions on Chrome, Firefox, Opera, Safari, Edge and Internet Explorer (latest version only), no issues arose, opens in same tab, press back to return
+
 <a name="screen"></a>
 
 ### Screen size Testing
@@ -319,6 +336,7 @@ Moto G4, Galaxy S5, Pixel 2, Pixel 2 XL, iPhone5/SE, iPhone 6/7/8, iPhone 6/7/8 
 - On the Galaxy Fold and iPhone 5SE (most narrow screens), the search bar text `Search Plants` cannot fit on one line, and the holder text covers the input field until clicked on to enter information
 - On the iPad, the six paginated records on index.html display as four on row one and two on row two
 
+### [Top](#top)
 ---
 <a name="deploy"></a>
 
@@ -352,6 +370,7 @@ To deploy this application to Heroku:
 3. This will open a new port (8080)
 4. Click `Open Browser` and the local app will open in a new window
 
+### [Top](#top)
 ---
 <a name="issues"></a>
 
@@ -359,6 +378,7 @@ To deploy this application to Heroku:
 
 Bootstrap and Materialize both used initially, until I realised that this causes issues in terms of the class names causing clashes. I realised this issue, and made the decision to switch to using Materialize only
 
+### [Top](#top)
 ---
 <a name="credits"></a>
 
@@ -369,4 +389,5 @@ Bootstrap and Materialize both used initially, until I realised that this causes
 - Richard Wells_lead for the README.md cloning from Github section
 - CI coursework videos for the search functionality
 
+### [Top](#top)
 ---

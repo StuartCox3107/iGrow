@@ -1,5 +1,3 @@
-<a name="top"></a>
-
 <div align="center">
 <img src="static/images/readmeimage.png" width="800">
 </div>
@@ -42,7 +40,7 @@ is limited to the UK.
 
 ## [Link to live site](https://i-grow.herokuapp.com/) opens in same tab, click back if needed
 
-### [Top](#top)
+### [Top](#iGrow)
 
 <a name="userstories"></a>
 
@@ -62,7 +60,7 @@ available on other worldwide sites"
 "As the site owner: I want to ensure that the site is focussed on UK plant growings to best
 serve the target market. Anything beyond this should be deleted"
 
-### [Top](#top)
+### [Top](#iGrow)
 ---
 ## Site plan, features & wireframes
 
@@ -134,7 +132,7 @@ This page will show in the case of a 404 error, it will have a hero image, error
 
 This case will show if a user tries to read a record that cannot be found. for example by using the back buttons or copy/paste post deletion. It will have a hero image, error warning and a "Return Home" button 
 
-### [Top](#top)
+### [Top](#iGrow)
 ---
 <a name="theme"></a>
 
@@ -150,7 +148,7 @@ Colours are designed to be soft and pastel like, the below colour palette was ge
 <img src="static/images/colourpalette.png" width="500">
 </div>
 
-### [Top](#top)
+### [Top](#iGrow)
 
 <a name="database"></a>
 
@@ -166,7 +164,7 @@ All data is stored in MongoDB in one collection
   - Harvest time:
     - Harvest date, harvest image (an upload of an image of the grown plant), harvest notes and a "Would you grow again?" option
 
-### [Top](#top)
+### [Top](#iGrow)
 ---
 <a name="left"></a>
 
@@ -178,7 +176,7 @@ All data is stored in MongoDB in one collection
 
 - Due to the database structure, the search feature requires that the user types in the full plant name in order to find the relevant record
 
-### [Top](#top)
+### [Top](#iGrow)
 ---
 <a name="tech"></a>
 
@@ -200,7 +198,7 @@ All data is stored in MongoDB in one collection
 - [Tiny PNG](https://tinypng.com/) used to compress some images used, opens in same tab, press back to return
 - [Heroku](https://dashboard.heroku.com/apps) used to deploy project, opens in same tab, press back to return
 
-### [Top](#top)
+### [Top](#iGrow)
 ---
 <a name="testingsection"></a>
 
@@ -336,7 +334,7 @@ Moto G4, Galaxy S5, Pixel 2, Pixel 2 XL, iPhone5/SE, iPhone 6/7/8, iPhone 6/7/8 
 - On the Galaxy Fold and iPhone 5SE (most narrow screens), the search bar text `Search Plants` cannot fit on one line, and the holder text covers the input field until clicked on to enter information
 - On the iPad, the six paginated records on index.html display as four on row one and two on row two
 
-### [Top](#top)
+### [Top](#iGrow)
 ---
 <a name="deploy"></a>
 
@@ -370,7 +368,7 @@ To deploy this application to Heroku:
 3. This will open a new port (8080)
 4. Click `Open Browser` and the local app will open in a new window
 
-### [Top](#top)
+### [Top](#iGrow)
 ---
 <a name="issues"></a>
 
@@ -378,7 +376,7 @@ To deploy this application to Heroku:
 
 Bootstrap and Materialize both used initially, until I realised that this causes issues in terms of the class names causing clashes. I realised this issue, and made the decision to switch to using Materialize only
 
-### [Top](#top)
+### [Top](#iGrow)
 ---
 <a name="credits"></a>
 
@@ -389,5 +387,5 @@ Bootstrap and Materialize both used initially, until I realised that this causes
 - Richard Wells_lead for the README.md cloning from Github section
 - CI coursework videos for the search functionality
 
-### [Top](#top)
+### [Top](#iGrow)
 ---
